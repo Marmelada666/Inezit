@@ -18,10 +18,4 @@ function inezit_scripts(){
 	wp_enqueue_script('inezit-main-js', get_template_directory_uri() . '/assets/js/main.js',array(),'x.x.x',true);
 	wp_enqueue_script('inezit-jquery-js', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.min.js',array(),'x.x.x',false);
 	wp_enqueue_script('inezit-cookie-js', get_template_directory_uri() . '/assets/libs/js-cookie/js.cookie.js',array(),'x.x.x',false);
-
-
-
-
-
-
 }

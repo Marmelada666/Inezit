@@ -33,7 +33,7 @@
                         <div class="hotline"><a href="#"><i class="topbar-icon fa fa-phone"></i><span>+84 909 015 345</span></a></div>
                     </div>
                     <div class="col-md-2 logo-topbar info-text2">
-                        <a href="index.php"><img src="assets/images/logo/logo.svg" alt="" /></a>
+                        <a href="http://localhost/wordpress/"><img src="assets/images/logo/logo.svg" alt="" /></a>
                     </div>
                     <!-- <div class="col-md-5 topbar-right text-right info-text3">
                     <div class="group-sign-in"><a href="login.html" class="login">login</a><a href="register.html" class="register">register</a></div>
@@ -46,8 +46,8 @@
                 <div class="header-main-wrapper">
                     <nav class="navigation">
                         <ul class="nav-links nav navbar-nav">
-                            <li class="active"><a href="courses.php" class="main-menu">Kurzy</a></li>
-                            <li><a href="news-detail.php" class="main-menu">Re-pas</a></li>
+                            <li class="active"><a href="http://localhost/wordpress/kurzy/" class="main-menu">Kurzy</a></li>
+                            <li><a href="http://localhost/wordpress/repas/" class="main-menu">Re-pas</a></li>
                             <li><a href="#kontakt" class="main-menu">Kontakt</a></li>
                         </ul>
                     </nav>
