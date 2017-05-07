@@ -4449,12 +4449,27 @@ header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 spa
   padding: 20px;
   margin-top: 50px; }
 
+.syllabus a {
+  display: block;
+  position: relative;
+  top: -4em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-image: url(../assets/images/linear-gradient.png);
+  background-size: cover;
+  color: #6f8190;
+  font-weight: bold; }
+
 .syllabus {
   margin-top: 50px; }
 
 .syllabus table {
   width: 100%;
   background-color: #fafafa; }
+
+.syllabus table:last-child {
+  margin-bottom: 4em; }
 
 .syllabus th {
   height: 50px;
