@@ -30,11 +30,11 @@
                                             <!-- Ucebny plan tabulka -->
                                                 <?php $b = -1 ?>
                                                 <!-- pole s kurzmi, zatial natvrdo-->
-                                                <?php $kurzy = array('88','79','72') ?>
+                                                <?php $kurzy = array('14','72','88','79','85') ?>
                                                 <!-- 1. Prvy cylkus = vypis vsetkych kurzov -->
                                                 <?php do { ?>
                                                     <!-- Nazov kurzu -->
-                                                    <h3><?php echo esc_html( get_the_title($kurzy[$b]) ); ?></h3>
+                                                    <h3><?php echo esc_html( get_the_title($kurzy[$b +1]) ); ?></h3>
                                                     <?php $h = 0 ?>
                                                     <?php $i = 1 ?>
                                                     <?php $h++ ?>
@@ -133,7 +133,7 @@
                                                             echo '</table>';
                                                         }
                                                     ?>
-                                                    <?php } while ( $i < 2); ?> <!-- Koniec cyklu 1.1-->
+                                                    <?php } while ( $i < 3); ?> <!-- Koniec cyklu 1.1-->
                                                     </div> <!-- end of collapsible wrapper, nesmie byt v cykle 1.1 -->
                                                     <a href="<?php echo '#collapsible' . $b ?>" data-toggle="collapse">Cely plan</a>
                                                 <?php } while ($b < count($kurzy)-1) ?><!--  Koniec cyklu 1-->
