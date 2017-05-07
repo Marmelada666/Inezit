@@ -1,4 +1,19 @@
 <?php  
+
+add_action('after_setup_theme', 'inezit_setup');
+function inezit_setup()
+{
+	add_theme_support('menus');
+	add_theme_support('title-tag');
+	add_theme_support('post-thumbnails');
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+	// add_theme_support('custom-fields');
+
+	register_nav_menus(array(
+		'primary' => 'Primary Menu	'
+	));
+}
+
 add_action('wp_enqueue_scripts','inezit_scripts');
 function inezit_scripts(){
 	// Theme stylesheet.
@@ -19,3 +34,4 @@ function inezit_scripts(){
 	wp_enqueue_script('inezit-jquery-js', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.min.js',array(),'x.x.x',false);
 	wp_enqueue_script('inezit-cookie-js', get_template_directory_uri() . '/assets/libs/js-cookie/js.cookie.js',array(),'x.x.x',false);
 }
+

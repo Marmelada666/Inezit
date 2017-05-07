@@ -23,7 +23,7 @@
                             <div class="row">
                             <div class="col-md-12 col-md-offset-1">
                                 <div class="col-md-10 col-sm-12">
-                                    <div class="news-detail"><img src="assets/images/news-detail-1.jpg" alt="" class="news-image"/>
+                                    <div class="news-detail"><img src="<?php echo get_template_directory_uri()?>/assets/images/news-detail-1.jpg" alt="" class="news-image"/>
                                         <h1 class="title-news text-center">Titulok</h1>
                                         <div class="news-content">
                                             <div class="news-des"><p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis.</p></div>
@@ -31,7 +31,7 @@
                                                 <div class="wide-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius ultricies metus. Donec ac ex porta libero venenatis sodales. Sed efficitur eget risus sed molestie. Nulla blandit bibendum metus ut sagittis. Etiam quis semper justo. Sed tristique facilisis felis ut tincidunt. Phasellus auctor convallis nisl ut accumsan. Suspendisse ullamcorper fermentum lectus, vel tincidunt ligula mollis sit amet.</p>
 
                                                     <p>Aliquam at ante at elit efficitur tincidunt a quis neque. Donec ut pulvinar metus. Pellentesque lobortis volutpat eros sed sagittis. Nunc rutrum ex eu auctor tristique. Maecenas suscipit vestibulum nunc nec placerat. Phasellus blandit augue nunc, consequat consectetur augue placerat sed. Aenean fermentum scelerisque lectus, sit amet ultricies ex interdum bibendum. Quisque porttitor, enim maximus convallis gravida, dui arcu lacinia libero, quis ornare nibh elit pharetra massa.</p></div>
-                                                <img src="assets/images/news-detail-2.jpg" alt="" class="news-image-block pull-left"/>
+                                                <img src="<?php echo get_template_directory_uri()?>/assets/images/news-detail-2.jpg" alt="" class="news-image-block pull-left"/>
 
                                                 <div class="text-block"><p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi.</p>
 

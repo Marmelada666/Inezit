@@ -33,7 +33,7 @@
                         <div class="hotline"><a href="#"><i class="topbar-icon fa fa-phone"></i><span>+84 909 015 345</span></a></div>
                     </div>
                     <div class="col-md-2 logo-topbar info-text2">
-                        <a href="http://localhost/wordpress/"><img src="assets/images/logo/logo.svg" alt="" /></a>
+                        <a href="http://localhost/wordpress/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo.svg" alt="" /></a>
                     </div>
                     <!-- <div class="col-md-5 topbar-right text-right info-text3">
                     <div class="group-sign-in"><a href="login.html" class="login">login</a><a href="register.html" class="register">register</a></div>

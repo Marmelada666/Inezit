@@ -1,7 +1,5 @@
+<?php /* WP Post Template: balik kurzov */  ?>
 <?php get_header(); ?>
-<?php while (have_posts() ) : the_post()  ?>
-
-<?php endwhile ?>
 <!-- WRAPPER-->
 <div id="wrapper-content"><!-- PAGE WRAPPER-->
     <div id="page-wrapper"><!-- MAIN CONTENT-->
@@ -25,17 +23,13 @@
                                 <div class="col-md-9 layout-left">
                                     <div class="course">
                                         <?php while (have_posts() ) : the_post()  ?>
-                                        	<?php the_content(); ?>
-										<?php endwhile ?>
-                                	</div>
-                                	<div class="syllabus">
-										<?php while (have_posts() ) : the_post()  ?>
-                                        	<!-- Ucebny plan tabulka -->
-                                                <?php $i = 0 ?>
-                                                <?php do { ?>
-                                                <?php $i++ ?>
-                                                <?php $syllabus = 'osnova_' . $i ?>
-                                                <?php $table = get_field($syllabus) ?>
+                                            <?php the_content(); ?>
+                                        <?php endwhile ?>
+                                    </div>
+                                    <div class="syllabus">
+                                        <?php while (have_posts() ) : the_post()  ?>
+                                            <!-- Ucebny plan tabulka -->
+                                                <?php $table = get_field('zaciatocnik') ?>
                                                 <?php 
                                                     if ( $table ) {
                                                         echo '<table border="0">';
@@ -79,7 +73,96 @@
                                                         echo '</table>';
                                                     }
                                                 ?>
-                                                <?php } while ( $i < 3); ?>
+                                                <?php $table = get_field('mierne_pokrocily') ?>
+                                                <?php 
+                                                    if ( $table ) {
+                                                        echo '<table border="0">';
+
+                                                            if ( $table['header'] ) {
+
+                                                                echo '<thead>';
+
+                                                                    echo '<tr>';
+
+                                                                        foreach ( $table['header'] as $th ) {
+
+                                                                            echo '<th>';
+                                                                                echo $th['c'];
+                                                                            echo '</th>';
+                                                                        }
+
+                                                                    echo '</tr>';
+
+                                                                echo '</thead>';
+                                                            }
+
+                                                            echo '<tbody>';
+
+                                                                foreach ( $table['body'] as $tr ) {
+
+                                                                    echo '<tr>';
+
+                                                                        foreach ( $tr as $td ) {
+
+                                                                            echo '<td>';
+                                                                            echo'<i class="material-icons">&#xE873;</i>';
+                                                                                echo $td['c'];
+                                                                            echo '</td>';
+                                                                        }
+
+                                                                    echo '</tr>';
+                                                                }
+
+                                                            echo '</tbody>';
+
+                                                        echo '</table>';
+                                                    }
+                                                ?>
+                                                <?php $table = get_field('pokrocily') ?>
+                                                <?php 
+                                                    if ( $table ) {
+                                                        echo '<table border="0">';
+
+                                                            if ( $table['header'] ) {
+
+                                                                echo '<thead>';
+
+                                                                    echo '<tr>';
+
+                                                                        foreach ( $table['header'] as $th ) {
+
+                                                                            echo '<th>';
+                                                                                echo $th['c'];
+                                                                            echo '</th>';
+                                                                        }
+
+                                                                    echo '</tr>';
+
+                                                                echo '</thead>';
+                                                            }
+
+                                                            echo '<tbody>';
+
+                                                                foreach ( $table['body'] as $tr ) {
+
+                                                                    echo '<tr>';
+
+                                                                        foreach ( $tr as $td ) {
+
+                                                                            echo '<td>';
+                                                                            echo'<i class="material-icons">&#xE873;</i>';
+                                                                                echo $td['c'];
+                                                                            echo '</td>';
+                                                                        }
+
+                                                                    echo '</tr>';
+                                                                }
+
+                                                            echo '</tbody>';
+
+                                                        echo '</table>';
+                                                    }
+                                                ?>
                                         <?php endwhile ?>
                                         </div>
                                 </div>
