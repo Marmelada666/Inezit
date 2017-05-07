@@ -4438,6 +4438,17 @@ header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 spa
 .course .syllabus ul li ul li:last-child {
   border-bottom: none; }
 
+.syllabus h3 {
+  text-align: center;
+  background-color: #90a1ae;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px;
+  margin-top: 50px; }
+
 .syllabus {
   margin-top: 50px; }
 

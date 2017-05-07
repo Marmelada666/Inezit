@@ -27,143 +27,116 @@
                                         <?php endwhile ?>
                                     </div>
                                     <div class="syllabus">
-                                        <?php while (have_posts() ) : the_post()  ?>
                                             <!-- Ucebny plan tabulka -->
-                                                <?php $table = get_field('zaciatocnik') ?>
-                                                <?php 
-                                                    if ( $table ) {
-                                                        echo '<table border="0">';
+                                                <?php $b = -1 ?>
+                                                <!-- pole s kurzmi, zatial natvrdo-->
+                                                <?php $kurzy = array('88','79','72') ?>
+                                                <!-- 1. Prvy cylkus = vypis vsetkych kurzov -->
+                                                <?php do { ?>
+                                                    <!-- Nazov kurzu -->
+                                                    <h3><?php echo esc_html( get_the_title($kurzy[$b]) ); ?></h3>
+                                                    <?php $h = 0 ?>
+                                                    <?php $i = 1 ?>
+                                                    <?php $h++ ?>
+                                                    <?php $b++ ?>
+                                                    <?php $syllabus = 'osnova_' . $h ?>
+                                                    <?php $table = get_field($syllabus, $kurzy[$b]) ?> <!-- prva cast osnovy -->
+                                                    <?php 
+                                                        if ( $table ) {
+                                                            echo '<table border="0">';
 
-                                                            if ( $table['header'] ) {
+                                                                if ( $table['header'] ) {
 
-                                                                echo '<thead>';
+                                                                    echo '<thead>';
 
-                                                                    echo '<tr>';
+                                                                        echo '<tr>';
 
-                                                                        foreach ( $table['header'] as $th ) {
+                                                                            foreach ( $table['header'] as $th ) {
 
-                                                                            echo '<th>';
-                                                                                echo $th['c'];
-                                                                            echo '</th>';
-                                                                        }
+                                                                                echo '<th>';
+                                                                                    echo $th['c'];
+                                                                                echo '</th>';
+                                                                            }
 
-                                                                    echo '</tr>';
+                                                                        echo '</tr>';
 
-                                                                echo '</thead>';
-                                                            }
-
-                                                            echo '<tbody>';
-
-                                                                foreach ( $table['body'] as $tr ) {
-
-                                                                    echo '<tr>';
-
-                                                                        foreach ( $tr as $td ) {
-                                                                            echo '<td>';
-                                                                            echo'<i class="material-icons">&#xE873;</i>';
-                                                                                echo $td['c'];
-                                                                            echo '</td>';
-                                                                        }
-
-                                                                    echo '</tr>';
+                                                                    echo '</thead>';
                                                                 }
 
-                                                            echo '</tbody>';
+                                                                echo '<tbody>';
 
-                                                        echo '</table>';
-                                                    }
-                                                ?>
-                                                <?php $table = get_field('mierne_pokrocily') ?>
-                                                <?php 
-                                                    if ( $table ) {
-                                                        echo '<table border="0">';
+                                                                    foreach ( $table['body'] as $tr ) {
 
-                                                            if ( $table['header'] ) {
+                                                                        echo '<tr>';
 
-                                                                echo '<thead>';
+                                                                            foreach ( $tr as $td ) {
+                                                                                echo '<td>';
+                                                                                echo'<i class="material-icons">&#xE873;</i>';
+                                                                                    echo $td['c'];
+                                                                                echo '</td>';
+                                                                            }
 
-                                                                    echo '<tr>';
+                                                                        echo '</tr>';
+                                                                    }
 
-                                                                        foreach ( $table['header'] as $th ) {
+                                                                echo '</tbody>';
 
-                                                                            echo '<th>';
-                                                                                echo $th['c'];
-                                                                            echo '</th>';
-                                                                        }
+                                                            echo '</table>';
+                                                        }
+                                                    ?>
+                                                    <!-- 1.1 cyklus v cykle = osnovy kurzu -->
+                                                    <div id="<?php echo 'collapsible' . $b ?>" class="collapse">
+                                                    <?php do { ?>
+                                                    <?php $i++ ?>
+                                                    <?php $syllabus = 'osnova_' . $i ?>
+                                                    <?php $table = get_field($syllabus, $kurzy[$b]) ?> <!-- Zbytok osnovy (schovaty) -->
+                                                    <?php 
+                                                        if ( $table ) {
+                                                            echo '<table border="0">';
 
-                                                                    echo '</tr>';
+                                                                if ( $table['header'] ) {
 
-                                                                echo '</thead>';
-                                                            }
+                                                                    echo '<thead>';
 
-                                                            echo '<tbody>';
+                                                                        echo '<tr>';
 
-                                                                foreach ( $table['body'] as $tr ) {
+                                                                            foreach ( $table['header'] as $th ) {
 
-                                                                    echo '<tr>';
+                                                                                echo '<th>';
+                                                                                    echo $th['c'];
+                                                                                echo '</th>';
+                                                                            }
 
-                                                                        foreach ( $tr as $td ) {
+                                                                        echo '</tr>';
 
-                                                                            echo '<td>';
-                                                                            echo'<i class="material-icons">&#xE873;</i>';
-                                                                                echo $td['c'];
-                                                                            echo '</td>';
-                                                                        }
-
-                                                                    echo '</tr>';
+                                                                    echo '</thead>';
                                                                 }
 
-                                                            echo '</tbody>';
+                                                                echo '<tbody>';
 
-                                                        echo '</table>';
-                                                    }
-                                                ?>
-                                                <?php $table = get_field('pokrocily') ?>
-                                                <?php 
-                                                    if ( $table ) {
-                                                        echo '<table border="0">';
+                                                                    foreach ( $table['body'] as $tr ) {
 
-                                                            if ( $table['header'] ) {
+                                                                        echo '<tr>';
 
-                                                                echo '<thead>';
+                                                                            foreach ( $tr as $td ) {
+                                                                                echo '<td>';
+                                                                                echo'<i class="material-icons">&#xE873;</i>';
+                                                                                    echo $td['c'];
+                                                                                echo '</td>';
+                                                                            }
 
-                                                                    echo '<tr>';
+                                                                        echo '</tr>';
+                                                                    }
 
-                                                                        foreach ( $table['header'] as $th ) {
+                                                                echo '</tbody>';
 
-                                                                            echo '<th>';
-                                                                                echo $th['c'];
-                                                                            echo '</th>';
-                                                                        }
-
-                                                                    echo '</tr>';
-
-                                                                echo '</thead>';
-                                                            }
-
-                                                            echo '<tbody>';
-
-                                                                foreach ( $table['body'] as $tr ) {
-
-                                                                    echo '<tr>';
-
-                                                                        foreach ( $tr as $td ) {
-
-                                                                            echo '<td>';
-                                                                            echo'<i class="material-icons">&#xE873;</i>';
-                                                                                echo $td['c'];
-                                                                            echo '</td>';
-                                                                        }
-
-                                                                    echo '</tr>';
-                                                                }
-
-                                                            echo '</tbody>';
-
-                                                        echo '</table>';
-                                                    }
-                                                ?>
-                                        <?php endwhile ?>
+                                                            echo '</table>';
+                                                        }
+                                                    ?>
+                                                    <?php } while ( $i < 2); ?> <!-- Koniec cyklu 1.1-->
+                                                    </div> <!-- end of collapsible wrapper, nesmie byt v cykle 1.1 -->
+                                                    <a href="<?php echo '#collapsible' . $b ?>" data-toggle="collapse">Cely plan</a>
+                                                <?php } while ($b < count($kurzy)-1) ?><!--  Koniec cyklu 1-->
                                         </div>
                                 </div>
                                 <div class="col-md-3 sidebar">
