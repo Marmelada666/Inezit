@@ -4360,84 +4360,6 @@ header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 spa
 * {
   box-sizing: border-box; }
 
-.list-group-item {
-  display: flex;
-  align-items: center;
-  border: none;
-  background-color: #fafafa;
-  border-radius: 0; }
-
-.group-header {
-  background-color: #90a1ae;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold; }
-
-.list-header {
-  background-color: #e9f1f7;
-  color: #6f8190;
-  font-weight: bold; }
-
-.list-group-item:first-child {
-  border: none;
-  border-radius: 0; }
-
-.list-group-item:last-child {
-  border: none;
-  border-radius: 0; }
-
-.list-group-item {
-  min-height: 50px; }
-
-.list-group-item i {
-  font-size: 14px;
-  margin-right: 1em;
-  color: #86bc42; }
-
-.course ul li {
-  line-height: 1.8em; }
-
-.course .syllabus ul {
-  list-style-type: none;
-  list-style-position: outside;
-  counter-reset: item; }
-
-.course .syllabus li {
-  counter-increment: item; }
-
-.course .syllabus ul {
-  padding-left: 0; }
-
-.course .syllabus ul li {
-  color: red;
-  background-color: #e9f1f7;
-  color: #6f8190;
-  font-weight: bold;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.course .syllabus ul li ul {
-  padding-left: 0;
-  margin-top: 15px;
-  margin-left: -20px;
-  margin-right: -20px; }
-
-.course .syllabus ul li ul li {
-  align-items: center;
-  background-color: #fafafa;
-  font-weight: 400;
-  padding-bottom: 20px;
-  color: #333333;
-  border-bottom: 1px solid #D8D8D8;
-  padding-left: 35px; }
-
-.course .syllabus ul li ul li:last-child {
-  border-bottom: none; }
-
 .syllabus h3 {
   text-align: center;
   background-color: #90a1ae;
@@ -4447,19 +4369,25 @@ header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 spa
   text-transform: uppercase;
   margin: 0;
   padding: 20px;
-  margin-top: 50px; }
+  margin-top: 20px; }
 
 .syllabus a {
   display: block;
   position: relative;
   top: -4em;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  background-image: url(../assets/images/linear-gradient.png);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  /*background-image:url(../assets/images/linear-gradient.png);*/
+  background-color: #fafafa;
   background-size: cover;
   color: #6f8190;
-  font-weight: bold; }
+  font-weight: bold;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); }
+
+.syllabus a:hover {
+  box-shadow: 0px -7px 15px rgba(0, 0, 0, 0.2);
+  color: #86bc42; }
 
 .syllabus {
   margin-top: 50px; }
@@ -4492,6 +4420,9 @@ header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 spa
   font-size: 1.25em;
   margin-right: 20px;
   color: #86bc42; }
+
+.syllabus-wrapper {
+  overflow-y: hidden; }
 
 .info-row {
   border-bottom: 1px solid #CACACA;
