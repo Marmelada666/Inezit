@@ -1,10 +1,28 @@
 <?php /* Template Name: all courses */  ?>
 <?php get_header(); ?>
 <!-- WRAPPER-->
+<h3>Pocitacove kurzy</h3>
 <?php
     $args = array(
         'post_type' => 'post',
         'category_name' => 'pocitacove-kurzy'
+    );
+
+    $post_query = new WP_Query($args);
+if($post_query->have_posts() ) {
+  while($post_query->have_posts() ) {
+    $post_query->the_post();
+    ?>
+    <a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
+    <?php
+  }
+}
+?>
+<h3>Uctovnictvo</h3>
+<?php
+    $args = array(
+        'post_type' => 'post',
+        'category_name' => 'uctovnictvo'
     );
 
     $post_query = new WP_Query($args);
