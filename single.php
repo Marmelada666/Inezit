@@ -1,13 +1,10 @@
 <?php get_header(); ?>
-<?php while (have_posts() ) : the_post()  ?>
-
-<?php endwhile ?>
 <!-- WRAPPER-->
 <div id="wrapper-content"><!-- PAGE WRAPPER-->
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
             <div class="content">
-                <div class="section background-opacity page-title-post set-height-top">
+                <div class="section background-opacity page-title-post set-height-top" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>);">
                     <div class="container">
                         <div class="page-title-post-wrapper"><!--.page-title-content--><h2 class="captions"><?php the_title(); ?></h2>
                             <ol class="breadcrumb">
