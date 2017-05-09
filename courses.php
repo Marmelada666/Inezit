@@ -1,40 +1,6 @@
 <?php /* Template Name: all courses */  ?>
 <?php get_header(); ?>
 <!-- WRAPPER-->
-<h3>Pocitacove kurzy</h3>
-<?php
-    $args = array(
-        'post_type' => 'post',
-        'category_name' => 'pocitacove-kurzy'
-    );
-
-    $post_query = new WP_Query($args);
-if($post_query->have_posts() ) {
-  while($post_query->have_posts() ) {
-    $post_query->the_post();
-    ?>
-    <a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
-    <?php
-  }
-}
-?>
-<h3>Uctovnictvo</h3>
-<?php
-    $args = array(
-        'post_type' => 'post',
-        'category_name' => 'uctovnictvo'
-    );
-
-    $post_query = new WP_Query($args);
-if($post_query->have_posts() ) {
-  while($post_query->have_posts() ) {
-    $post_query->the_post();
-    ?>
-    <a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
-    <?php
-  }
-}
-?>
 <div id="wrapper-content"><!-- PAGE WRAPPER-->
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
@@ -65,260 +31,90 @@ if($post_query->have_posts() ) {
                                 <h2 class="center-title">Počítačové kurzy</h2>
                                 <div class="bottom-title"><i class="bottom-icon icon-icon-04"></i></div>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
+                            <?php
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'category_name' => 'pocitacove-kurzy'
+                                );
+
+                                $post_query = new WP_Query($args);
+                            if($post_query->have_posts() ) {
+                              while($post_query->have_posts() ) {
+                                $post_query->the_post();
+                                ?>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
+                                    <!--karta-->
+                                    <div class="thumbnail">
+                                        <a href=" <?php the_permalink() ?> ">
+                                            <div class="background-opacity-1">
+                                                <div class="kurz-img" style="background-image: url(<?php the_field('ikonka_kurzu') ?>);"></div>
+                                            </div>
+                                        </a>
+                                        <div class="caption">
+                                            <div class="titul-kurzu text-center">
+                                                <a href="<?php the_permalink() ?>" class="titulok"><?php the_title() ?></a>
+                                            </div>
+                                            <div class="kurz-info">
+                                                <div class="popis-kurzu">
+                                                    <span class="cena"><?php the_field('cena_kurzu') ?> €</span><span class="hodiny"> 80 hodin</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--end of karta-->
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta-->                             
-                        </div>
+                                <!--end of karta-->
+                                <?php
+                              }
+                            }
+                            ?>                            
+                        </div> <!-- end of row -->
                         <div class="row kategoria">
                             <div class="group-title-index">
                                 <!-- <h4 class="top-title">CHOOSE YOUR COURSE</h4> -->
                                 <h2 class="center-title">Účtovníctvo</h2>
                                 <div class="bottom-title"><i class="bottom-icon icon-icon-04"></i></div>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
+                            <?php
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'category_name' => 'uctovnictvo'
+                                );
+
+                                $post_query = new WP_Query($args);
+                            if($post_query->have_posts() ) {
+                              while($post_query->have_posts() ) {
+                                $post_query->the_post();
+                                ?>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
+                                    <!--karta-->
+                                    <div class="thumbnail">
+                                        <a href=" <?php the_permalink() ?> ">
+                                            <div class="kurz-img" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>);"></div>
+                                        </a>
+                                        <div class="caption">
+                                            <div class="titul-kurzu text-center">
+                                                <a href="<?php the_permalink() ?>" class="titulok"><?php the_title() ?></a>
+                                            </div>
+                                            <div class="kurz-info">
+                                                <div class="popis-kurzu">
+                                                    <span class="cena"><?php the_field('cena_kurzu') ?> €</span><span class="hodiny"> 80 hodin</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--end of karta-->
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta--> 
-                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                <!--karta-->
-                                <div class="thumbnail">
-                                    <a href="courses-detail.php">
-                                        <div class="kurz-img">
-                                        </div>
-                                    </a>
-                                    <div class="caption">
-                                        <div class="titul-kurzu text-center">
-                                            <a href="courses-detail.php" class="titulok">Microsoft office</a>
-                                        </div>
-                                        <div class="kurz-info">
-                                            <div class="popis-kurzu">
-                                                <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of karta-->                             
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <!--end of karta-->
+                                <?php
+                              }
+                            }
+                            ?>                            
+                        </div> <!-- end of row -->
+                    </div> <!-- end of container -->
+                </div> <!-- end of section  -->
+            </div> <!-- end of content -->
+        </div> <!-- end of main content  -->
+    </div><!--  end of page wrapper -->
     <!-- BUTTON BACK TO TOP-->
     <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
-</div>
+</div> <!-- end of wrapper content -->
 <?php get_footer(); ?>

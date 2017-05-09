@@ -280,87 +280,33 @@
                                 <h2 class="center-title">Populárne kurzy</h2>
                                 <div class="bottom-title"><i class="bottom-icon icon-icon-04"></i></div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                    <!--karta-->
-                                    <div class="thumbnail">
-                                        <a href="courses-detail.php">
-                                            <div class="kurz-img-powerpoint">
-                                            </div>
-                                        </a>
-                                        <div class="caption">
-                                            <div class="titul-kurzu text-center">
-                                                <a href="courses.php" class="titulok">Microsoft office</a>
-                                            </div>
-                                            <div class="kurz-info">
-                                                <div class="popis-kurzu">
-                                                    <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                                </div>
+                            <!-- Popularne kurzy -->
+                            <?php $b = array(121,14,72,79) ?>
+                            <?php $i = 0 ?>
+                            <?php do { ?>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
+                                <!--karta-->
+                                <div class="thumbnail">
+                                    <a href=" <?php the_permalink($b[$i]) ?> ">
+                                        <div class="background-opacity-1">
+                                            <div class="kurz-img" style="background-image: url(<?php echo get_the_post_thumbnail_url($b[$i]) ?>);"></div>
+                                        </div>
+                                    </a>
+                                    <div class="caption">
+                                        <div class="titul-kurzu text-center">
+                                            <a href="<?php the_permalink($b[$i]) ?>" class="titulok"><?php echo get_the_title($b[$i]) ?></a>
+                                        </div>
+                                        <div class="kurz-info">
+                                            <div class="popis-kurzu">
+                                                <span class="cena"><?php the_field('cena_kurzu',$b[$i]) ?> €</span><span class="hodiny"> 80 hodin</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!--end of karta-->
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                    <!--karta-->
-                                    <div class="thumbnail">
-                                        <a href="courses-detail.php">
-                                            <div class="kurz-img-excel">
-                                            </div>
-                                        </a>
-                                        <div class="caption">
-                                            <div class="titul-kurzu text-center">
-                                                <a href="courses.php" class="titulok">Microsoft Excel</a>
-                                            </div>
-                                            <div class="kurz-info">
-                                                <div class="popis-kurzu">
-                                                    <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end of karta-->
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                    <!--karta-->
-                                    <div class="thumbnail">
-                                        <a href="courses-detail.php">
-                                            <div class="kurz-img-word">
-                                            </div>
-                                        </a>
-                                        <div class="caption">
-                                            <div class="titul-kurzu text-center">
-                                                <a href="courses.php" class="titulok">Microsoft Word</a>
-                                            </div>
-                                            <div class="kurz-info">
-                                                <div class="popis-kurzu">
-                                                    <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end of karta-->
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
-                                    <!--karta-->
-                                    <div class="thumbnail">
-                                        <a href="courses-detail.php">
-                                            <div class="kurz-img-acces">
-                                            </div>
-                                        </a>
-                                        <div class="caption">
-                                            <div class="titul-kurzu text-center">
-                                                <a href="courses.php" class="titulok">Microsoft Office</a>
-                                            </div>
-                                            <div class="kurz-info">
-                                                <div class="popis-kurzu">
-                                                    <span class="cena">120€</span><span class="hodiny"> 80 hodin</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end of karta-->
+                            </div>
+                            <?php $i++ ?>
+                            <?php } while ( $i <= 3) ?>
+                            <!--end of karta-->
                             </div>
                             <div class="row">
                                 <div class="group-button">

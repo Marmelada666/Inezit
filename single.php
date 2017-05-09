@@ -79,7 +79,7 @@
                                                 <?php } while ( $i < 3); ?>
                                         <?php endwhile ?>
                                         </div>
-                                </div>
+                                </div> <!-- end of layout left -->
                                 <div class="col-md-3 sidebar">
                                     <div class="row">
                                         <div class="course-price-widget col-sm-6 col-md-12 col-sm-offset-3 col-md-offset-0">
@@ -104,7 +104,7 @@
                                                             <div title="Rated 5.00 out of 5" class="pull-right star-rating"><span class="width-80"><strong class="rating">5.00</strong> out of 5</span></div>
                                                         </div>
                                                     </div>
-                                                    <button class="btn btn-green"><span>Prihlasit</span></button>
+                                                    <button class="btn btn-green" data-toggle="modal" data-target="#prihlaska"><span>Prihlasit</span></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -159,7 +159,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> <!-- end of sidebar -->
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- end of page wrapper -->
+        <!-- Modal -->
+        <div class="modal fade" id="prihlaska" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-inverse.svg" alt="Inezit" class="img-responsive"/>
+                    <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
+                </div>
+            </div>
+          </div>
+        </div>
     <!-- BUTTON BACK TO TOP-->
     <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
 </div>

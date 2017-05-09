@@ -5,7 +5,7 @@
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
             <div class="content">
-                <div class="section background-opacity page-title-post set-height-top">
+                <div class="section background-opacity page-title-post set-height-top" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>);">
                     <div class="container">
                         <div class="page-title-post-wrapper"><!--.page-title-content--><h2 class="captions"><?php the_title(); ?></h2>
                             <ol class="breadcrumb">
@@ -89,7 +89,6 @@
                                                                 echo '<thead>';
 
                                                                     echo '<tr>';
-
                                                                         foreach ( $table['header'] as $th ) {
 
                                                                             echo '<th>';
@@ -154,7 +153,7 @@
                                                             <div title="Rated 5.00 out of 5" class="pull-right star-rating"><span class="width-80"><strong class="rating">5.00</strong> out of 5</span></div>
                                                         </div>
                                                     </div>
-                                                    <button class="btn btn-green"><span>Prihlasit</span></button>
+                                                    <button class="btn btn-green" data-toggle="modal" data-target="#prihlaska"><span>Prihlasit</span></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,12 +211,23 @@
                                 </div>
                                 </div>
                             </div>
-                        </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="prihlaska" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-body">
+                                    <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div> <!-- end of container -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+        
     <!-- BUTTON BACK TO TOP-->
     <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
 </div>

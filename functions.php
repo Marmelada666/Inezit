@@ -13,7 +13,6 @@ function inezit_setup()
 		'primary' => 'Primary Menu	'
 	));
 }
-
 add_action('wp_enqueue_scripts','inezit_scripts');
 function inezit_scripts(){
 	// Theme stylesheet.
