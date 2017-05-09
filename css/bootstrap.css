@@ -5042,6 +5042,7 @@ button.list-group-item-danger {
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
+  transition: all 0.3s linear;
   opacity: 0.2;
   filter: alpha(opacity=20); }
   .close:hover, .close:focus {
@@ -6409,6 +6410,10 @@ body {
 p, a, label, span {
   font-size: 14px; }
 
+p strong {
+  font-size: 2em;
+  font-weight: 100; }
+
 a:hover, a:active, a:focus {
   text-decoration: none; }
 
@@ -6960,6 +6965,10 @@ ul.list-detail li i {
   text-align: center;
   padding: 0px 14px;
   width: 39px; }
+
+.prihlaska-btn {
+  width: 120px;
+  margin: auto; }
 
 .page-title .breadcrumb {
   margin: 0;
@@ -7638,9 +7647,11 @@ footer {
   color: #696969 !important;
   font-weight: 100 !important; }
 
-.modal-body img {
-  width: 15em;
-  margin: 2em auto; }
+.modal {
+  padding-right: 0px !important; }
 
-.modal-dialog {
-  margin-top: 15vh; }
+.modal-close-btn {
+  font-size: 2em; }
+
+.modal-header .close {
+  margin-top: -0.5em; }
