@@ -6634,7 +6634,9 @@ ul.list-detail li i {
     font-size: 2em;
     margin-bottom: 30px; }
   .group-title-index .center-title {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .page-title-post-wrapper .captions {
+    font-size: 2.8em; } }
 
 @media screen and (max-width: 380px) {
   .page-title .captions {
@@ -6642,7 +6644,9 @@ ul.list-detail li i {
   .group-title-index {
     margin-bottom: 30px; }
   .group-title-index .center-title {
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+  .page-title-post-wrapper .captions {
+    font-size: 2em; } }
 
 .group-button {
   display: block;

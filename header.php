@@ -29,8 +29,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 topbar-left text-left info-text1">
-                        <div class="email"><a href="#"><i class="topbar-icon fa fa-envelope-o"></i><span>hello.shinway@gmail.com</span></a></div>
-                        <div class="hotline"><a href="#"><i class="topbar-icon fa fa-phone"></i><span>+84 909 015 345</span></a></div>
+                        <div class="email"><a href="#"><i class="topbar-icon fa fa-envelope-o"></i><span><?php the_field('emailova_adresa',163) ?></span></a></div>
+                        <div class="hotline"><a href="#"><i class="topbar-icon fa fa-phone"></i><span><?php the_field('telefonne_cislo',163) ?></span></a></div>
                     </div>
                     <div class="col-md-2 logo-topbar info-text2">
                         <a href="http://localhost/wordpress/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo.svg" alt="" /></a>

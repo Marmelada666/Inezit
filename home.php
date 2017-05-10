@@ -311,7 +311,7 @@
                             <div class="row">
                                 <div class="group-button">
                                     <!-- <button data-wow-delay="1.3s" data-wow-duration="1s" class="btn btn-transition-3 wow fadeInLeft"><span>Puschase theme</span></button> -->
-                                    <button onclick="window.location.href='courses.php'" class="btn btn-transition-3"><span>Zobrazit vsetky kurzy</span></button>
+                                    <button onclick="window.location.href='http://localhost/wordpress/kurzy/'" class="btn btn-transition-3"><span>Zobrazit vsetky kurzy</span></button>
                                 </div>
                             </div>
                         </div>
@@ -323,15 +323,13 @@
                                 <div class="why-choose-us-wrapper">
                                     <h2 class="title-2">Projekt Re-pas</h2>
                                     <p>Nieco o projekte repas blabla</p>
-                                    <button onclick="window.location.href='categories.html'" class="btn btn-green-2"><span>Viac o projekte re-pas</span></button>
+                                    <button onclick="window.location.href='http://localhost/wordpress/repas/'" class="btn btn-green-2"><span>Viac o projekte re-pas</span></button>
                                 </div>
-                                <div data-wow-delay="0.2s" data-wow-duration="1.2s" class="background-girl-1 wow fadeInUp"><img src="assets/images/urad-prace.png" alt="" class="img-responsive" /></div>
+                                <div data-wow-delay="0.2s" data-wow-duration="1.2s" class="background-girl-1 wow fadeInUp"><img src="<?php echo get_template_directory_uri() ?>/assets/images/urad-prace.png" alt="" class="img-responsive" /></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- BUTTON BACK TO TOP-->
-            <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
         </div>
 <?php get_footer(); ?>

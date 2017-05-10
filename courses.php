@@ -114,7 +114,5 @@
             </div> <!-- end of content -->
         </div> <!-- end of main content  -->
     </div><!--  end of page wrapper -->
-    <!-- BUTTON BACK TO TOP-->
-    <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
 </div> <!-- end of wrapper content -->
 <?php get_footer(); ?>

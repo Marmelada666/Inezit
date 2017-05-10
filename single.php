@@ -179,7 +179,5 @@
         else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
             get_template_part( 'template-parts/post/content', 'none' );
         endif; ?>
-    <!-- BUTTON BACK TO TOP-->
-    <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
 </div>
 <?php get_footer(); ?>

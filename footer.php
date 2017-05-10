@@ -10,12 +10,12 @@
                                         <div class="content-widget">
                                             <div class="info-list">
                                                 <ul class="list-unstyled">
-                                                    <li><i class="fa fa-envelope-o"></i><a href="#">hello@edugate.com</a></li>
-                                                    <li><i class="fa fa-phone"></i><a href="#">P: 3333 222 1111</a></li>
+                                                    <li><i class="fa fa-envelope-o"></i><a href="#"><?php the_field('emailova_adresa',163) ?></a></li>
+                                                    <li><i class="fa fa-phone"></i><a href="#"><?php the_field('telefonne_cislo',163) ?></a></li>
                                                     <li><i class="fa fa-map-marker"></i>
                                                         <a href="#">
-                                                            <p>99 Barnard St - Suite 111</p>
-                                                            <p>United States - GA 22222</p>
+                                                            <p><?php the_field('firemna_adresa_ulica',163) ?></p>
+                                                            <p><?php the_field('firemna_adresa_mesto',163) ?></p>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -24,11 +24,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-9 col-sm-12">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <div class="mailing-widget widget">
-                                            <div class="title-widget">Napíšte nám</div>
-                                            <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 3, 'title' => false, 'description' => false ) ); ?>
-                                        </div>
+                                    <div class="mailing-widget widget">
+                                        <div class="title-widget">Napíšte nám</div>
+                                        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 3, 'title' => false, 'description' => false ) ); ?>
                                     </div>
                                 </div>
                         </div> <!-- end of row -->
