@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <!-- WRAPPER-->
+<?php $titulok = 'ja' ?>
 <div id="wrapper-content"><!-- PAGE WRAPPER-->
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
@@ -168,27 +169,15 @@
             </div>
         </div>
     </div> <!-- end of page wrapper -->
-        <!-- Modal -->
-        <div class="modal fade" id="prihlaska" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-btn" aria-hidden="true">&times;</span></button>
-                <div class="row">
-                    <div class="col-xs-4 col-md-3">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-inverse.svg" alt="Inezit" class="img-responsive"/>
-                    </div>
-                    <div class="col-xs-12 text-center">
-                        <p><strong>Prihláška</strong><br>(Prihlásenie na kurz je nezáväzné)</p>
-                    </div>
-                </div>
-                </div>
-                <div class="modal-body">
-                    <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
-                </div>
-            </div>
-          </div>
-        </div>
+        <!-- Prihlaska -->
+        <?php
+        if ( have_posts() ) :
+            while ( have_posts() ) : the_post();
+                get_template_part( 'template-parts/widget', 'prihlaska' );
+            endwhile;
+        else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
+            get_template_part( 'template-parts/post/content', 'none' );
+        endif; ?>
     <!-- BUTTON BACK TO TOP-->
     <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
 </div>
