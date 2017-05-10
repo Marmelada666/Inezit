@@ -7288,6 +7288,71 @@ html, body {
     box-shadow: none;
     border: none; } }
 
+.karta {
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: px solid #e1e1e1; }
+
+.box-shadow {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+
+/*SVG icon*/
+.icon-1 {
+  display: block;
+  min-width: 77px;
+  margin: auto;
+  margin-left: 1.2em;
+  margin-right: 1.8em; }
+
+.icon-2 {
+  display: block;
+  min-width: 77px;
+  margin: auto;
+  margin-left: 1.2em;
+  margin-right: 1.8em; }
+
+.icon-3 {
+  display: block;
+  min-width: 77px;
+  margin: auto;
+  margin-left: 1.2em;
+  margin-right: 1.8em; }
+
+.st0 {
+  fill: none;
+  stroke: #86bc42;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.st1 {
+  clip-path: url(#SVGID_2_); }
+
+.st2 {
+  stroke: #86bc42;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
+.st3 {
+  stroke: #86bc42;
+  stroke-miterlimit: 10; }
+
+.st4 {
+  fill: #86bc42; }
+
+.karta-text {
+  padding: 1.5em;
+  border-left: 1px solid #e1e1e1; }
+
+.karta-text span {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.karta-text p {
+  margin-top: 1.2em;
+  font-size: 14px; }
+
 footer {
   width: 100%; }
 
