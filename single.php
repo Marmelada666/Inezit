@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php $actualPage = 'kurzy' ?>
 <!-- WRAPPER-->
 <?php $titulok = 'ja' ?>
 <div id="wrapper-content"><!-- PAGE WRAPPER-->

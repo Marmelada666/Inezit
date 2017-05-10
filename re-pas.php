@@ -1,4 +1,5 @@
 <?php /* Template Name: re-pas */ ?>
+<?php $actualPage = 're-pas' ?>
 <?php get_header(); ?>
 <!-- WRAPPER-->
 <div id="wrapper-content"><!-- PAGE WRAPPER-->

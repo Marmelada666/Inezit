@@ -41,13 +41,15 @@
                 </div>
             </div>
         </div>
+        <?php $i = true ?>
         <div class="header-main homepage-03">
             <div class="container">
                 <div class="header-main-wrapper">
                     <nav class="navigation">
                         <ul class="nav-links nav navbar-nav">
-                            <li class="active"><a href="http://localhost/wordpress/kurzy/" class="main-menu">Kurzy</a></li>
-                            <li><a href="http://localhost/wordpress/repas/" class="main-menu">Re-pas</a></li>
+                            <li class="<?php if (is_front_page()){echo 'active';} ?>"><a href="http://localhost/wordpress/domov/" class="main-menu">Domov</a></li>
+                            <li class="<?php if (is_page('kurzy') || ! empty ($GLOBALS['post']) && is_single() && in_category('kurzy', $GLOBALS['post']) ){echo 'active';} ?>"><a href="http://localhost/wordpress/kurzy/" class="main-menu">Kurzy</a></li>
+                            <li class="<?php if (is_page('repas')){echo 'active';} ?>"><a href="http://localhost/wordpress/repas/" class="main-menu">Re-pas</a></li>
                             <li><a href="#kontakt" class="main-menu">Kontakt</a></li>
                         </ul>
                     </nav>

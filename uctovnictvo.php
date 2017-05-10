@@ -1,4 +1,5 @@
 <?php /* WP Post Template: uctovnictvo */  ?>
+<?php $actualPage = 'kurzy' ?>
 <?php get_header(); ?>
 <!-- WRAPPER-->
 <div id="wrapper-content"><!-- PAGE WRAPPER-->
