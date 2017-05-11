@@ -24,7 +24,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-9 col-sm-12">
+                                <div class="col-md-9 col-sm-6">
                                     <div class="mailing-widget widget">
                                         <div class="title-widget">Napíšte nám</div>
                                         <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 3, 'title' => false, 'description' => false ) ); ?>

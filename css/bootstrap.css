@@ -5825,6 +5825,53 @@ button.close {
   color: #49575f; }
 
 /*Akreditacia ikonka*/
+.thumbnail .caption {
+  padding: 0; }
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0px;
+  border: none;
+  transition: all 0.3s linear; }
+
+.thumbnail a {
+  color: #6f8190;
+  transition: all 0.3s linear; }
+
+.thumbnail .titulok {
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 400;
+  padding: 1em; }
+
+.col-xs-12 {
+  transition: width .3s linear; }
+
+.thumbnail:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+  .thumbnail:hover a {
+    color: #86bc42; }
+
+.kurz-img {
+  height: 262px;
+  background-position: center;
+  background-size: cover; }
+
+.background-opacity-1 {
+  background-color: #90a1ae; }
+
+.popis-kurzu .cena {
+  flex: 1;
+  color: white;
+  font-size: 1.5em;
+  text-align: left; }
+
+span.hodiny {
+  color: white; }
+
+.kategoria {
+  margin-bottom: 60px; }
+
 @media only screen and (max-width: 768px) {
   .no-padding-xs {
     padding: 0; }
@@ -5871,49 +5918,6 @@ button.close {
     transition: opacity 0.3s linear; }
   .kurz-img:hover {
     opacity: 1; } }
-
-.thumbnail .caption {
-  padding: 0; }
-
-.thumbnail {
-  padding: 0;
-  border-radius: 0px;
-  border: none;
-  transition: all 0.3s linear; }
-
-.thumbnail a {
-  color: #6f8190;
-  transition: all 0.3s linear; }
-
-.thumbnail .titulok {
-  font-size: 1.5em;
-  line-height: 1.7em;
-  font-weight: 400; }
-
-.thumbnail:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
-  .thumbnail:hover a {
-    color: #86bc42; }
-
-.kurz-img {
-  height: 262px;
-  background-position: center;
-  background-size: cover; }
-
-.background-opacity-1 {
-  background-color: #90a1ae; }
-
-.popis-kurzu .cena {
-  flex: 1;
-  color: white;
-  font-size: 1.5em;
-  text-align: left; }
-
-span.hodiny {
-  color: white; }
-
-.kategoria {
-  margin-bottom: 60px; }
 
 header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topbar-icon {
   color: #86bc42;
@@ -6391,7 +6395,11 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #737373;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  transition: font-size .3s linear; }
+
+.container {
+  transition: width .3s linear; }
 
 .group-title-index {
   text-align: center;
@@ -7299,23 +7307,12 @@ html, body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
 
 /*SVG icon*/
-.icon-1 {
-  display: block;
-  min-width: 77px;
-  margin: auto;
-  margin-left: 1.2em;
-  margin-right: 1.8em; }
-
-.icon-2 {
-  display: block;
-  min-width: 77px;
-  margin: auto;
-  margin-left: 1.2em;
-  margin-right: 1.8em; }
-
+.icon-1,
+.icon-2,
 .icon-3 {
   display: block;
   min-width: 77px;
+  max-width: 90px;
   margin: auto;
   margin-left: 1.2em;
   margin-right: 1.8em; }
