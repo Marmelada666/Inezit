@@ -101,7 +101,7 @@
                                 <div class="thumbnail">
                                     <a href=" <?php the_permalink($b[$i]) ?> ">
                                         <div class="background-opacity-1">
-                                            <div class="kurz-img" style="background-image: url(<?php echo get_the_post_thumbnail_url($b[$i]) ?>);"></div>
+                                            <div class="kurz-img" style="background-image: url(<?php the_field('ikonka_kurzu',$b[$i]) ?>);"></div>
                                         </div>
                                     </a>
                                     <div class="caption">

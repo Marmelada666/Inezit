@@ -15,13 +15,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="section">
+                <!-- To zelene -->
+                <!-- <div class="section">
                     <div class="search-input">
                         <div class="container">
                             <div class="search-input-wrapper">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="section section-padding courses">
                     <div class="container">
@@ -89,14 +90,16 @@
                                     <!--karta-->
                                     <div class="thumbnail">
                                         <a href=" <?php the_permalink() ?> ">
-                                            <div class="kurz-img" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>);"></div>
+                                            <div class="background-opacity-1">
+                                                <div class="kurz-img" style="background-image: url(<?php the_field('ikonka_kurzu') ?>);"></div>
+                                            </div>
                                         </a>
                                         <div class="caption">
                                             <div class="titul-kurzu text-center">
                                                 <a href="<?php the_permalink() ?>" class="titulok"><?php the_title() ?></a>
                                             </div>
                                             <div class="kurz-info">
-                                                <div class="popis-kurzu">
+                                                <div class="popis-kurzu yellow">
                                                     <span class="cena"><?php the_field('cena_kurzu') ?> €</span><span class="hodiny"> 80 hodin</span>
                                                 </div>
                                             </div>

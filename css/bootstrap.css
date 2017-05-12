@@ -5844,13 +5844,16 @@ button.close {
   font-weight: 400;
   padding: 1em; }
 
+.popis-kurzu {
+  background-color: #485884; }
+
 .col-xs-12 {
   transition: width .3s linear; }
 
 .thumbnail:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
   .thumbnail:hover a {
-    color: #86bc42; }
+    color: #242c42; }
 
 .kurz-img {
   height: 262px;
@@ -5887,11 +5890,11 @@ span.hodiny {
   .titul-kurzu {
     height: 206px;
     display: flex;
+    background-color: #e1e1e1;
     align-items: center;
     justify-content: center; }
   .popis-kurzu {
     height: 56px;
-    background-color: #9eca67;
     padding: 0 1em 0 1em;
     display: flex;
     align-items: center; }
@@ -5901,7 +5904,7 @@ span.hodiny {
 @media only screen and (min-width: 768px) {
   .popis-kurzu {
     height: 56px;
-    background-color: #9eca67;
+    background-color: #485884;
     padding: 0 1em 0 1em;
     display: flex;
     align-items: center; }
@@ -5916,8 +5919,15 @@ span.hodiny {
   .kurz-img {
     opacity: .7;
     transition: opacity 0.3s linear; }
-  .kurz-img:hover {
-    opacity: 1; } }
+  .thumbnail:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+    .thumbnail:hover a {
+      color: #242c42; }
+    .thumbnail:hover .kurz-img {
+      opacity: 1; } }
+
+.yellow {
+  background-color: #c19432; }
 
 header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topbar-icon {
   color: #86bc42;
