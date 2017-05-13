@@ -108,6 +108,7 @@
                                         <div class="titul-kurzu text-center">
                                             <a href="<?php the_permalink($b[$i]) ?>" class="titulok"><?php echo get_the_title($b[$i]) ?></a>
                                         </div>
+                                        <div class="line"></div>
                                         <div class="kurz-info">
                                             <div class="popis-kurzu">
                                                 <span class="cena"><?php the_field('cena_kurzu',$b[$i]) ?> €</span><span class="hodiny"> 80 hodin</span>

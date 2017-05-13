@@ -30,7 +30,6 @@
                             <div class="group-title-index">
                                 <!-- <h4 class="top-title">CHOOSE YOUR COURSE</h4> -->
                                 <h2 class="center-title">Počítačové kurzy</h2>
-                                <div class="bottom-title"><i class="bottom-icon icon-icon-04"></i></div>
                             </div>
                             <?php
                                 $args = array(
@@ -55,6 +54,7 @@
                                             <div class="titul-kurzu text-center">
                                                 <a href="<?php the_permalink() ?>" class="titulok"><?php the_title() ?></a>
                                             </div>
+                                            <div class="line"></div>
                                             <div class="kurz-info">
                                                 <div class="popis-kurzu">
                                                     <span class="cena"><?php the_field('cena_kurzu') ?> €</span><span class="hodiny"> 80 hodin</span>
@@ -73,7 +73,6 @@
                             <div class="group-title-index">
                                 <!-- <h4 class="top-title">CHOOSE YOUR COURSE</h4> -->
                                 <h2 class="center-title">Účtovníctvo</h2>
-                                <div class="bottom-title"><i class="bottom-icon icon-icon-04"></i></div>
                             </div>
                             <?php
                                 $args = array(
@@ -98,8 +97,9 @@
                                             <div class="titul-kurzu text-center">
                                                 <a href="<?php the_permalink() ?>" class="titulok"><?php the_title() ?></a>
                                             </div>
+                                            <div class="line"></div>
                                             <div class="kurz-info">
-                                                <div class="popis-kurzu yellow">
+                                                <div class="popis-kurzu">
                                                     <span class="cena"><?php the_field('cena_kurzu') ?> €</span><span class="hodiny"> 80 hodin</span>
                                                 </div>
                                             </div>

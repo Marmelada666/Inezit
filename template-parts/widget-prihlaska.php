@@ -11,9 +11,6 @@
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modal-close-btn" aria-hidden="true">&times;</span></button>
         <div class="row">
-            <div class="col-xs-4 col-md-3">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo-inverse.svg" alt="Inezit" class="img-responsive"/>
-            </div>
             <div class="col-xs-12 text-center">
                 <p><strong>Prihláška na kurz <?php the_title() ?></strong><br>(Prihlásenie na kurz je nezáväzné)</p>
             </div>

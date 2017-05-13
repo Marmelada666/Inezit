@@ -5832,7 +5832,8 @@ button.close {
   padding: 0;
   border-radius: 0px;
   border: none;
-  transition: all 0.3s linear; }
+  transition: all 0.3s linear;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .thumbnail a {
   color: #6f8190;
@@ -5845,7 +5846,7 @@ button.close {
   padding: 1em; }
 
 .popis-kurzu {
-  background-color: #485884; }
+  background-color: current; }
 
 .col-xs-12 {
   transition: width .3s linear; }
@@ -5861,19 +5862,32 @@ button.close {
   background-size: cover; }
 
 .background-opacity-1 {
-  background-color: #90a1ae; }
+  background-color: #5a6ea5; }
 
 .popis-kurzu .cena {
   flex: 1;
   color: white;
   font-size: 1.5em;
-  text-align: left; }
+  text-align: left;
+  color: #6f8190;
+  transition: color .3s linear; }
 
 span.hodiny {
-  color: white; }
+  color: #6f8190;
+  transition: color .3s linear; }
+
+.line {
+  height: 1px;
+  width: 68%;
+  margin: auto;
+  background-color: #a9b3bc;
+  transition: background-color .3s linear; }
+
+.karta-kurzy {
+  margin: 3px 0 1em 0; }
 
 .kategoria {
-  margin-bottom: 60px; }
+  margin-bottom: 200px; }
 
 @media only screen and (max-width: 768px) {
   .no-padding-xs {
@@ -5890,11 +5904,10 @@ span.hodiny {
   .titul-kurzu {
     height: 206px;
     display: flex;
-    background-color: #e1e1e1;
     align-items: center;
     justify-content: center; }
   .popis-kurzu {
-    height: 56px;
+    height: 55px;
     padding: 0 1em 0 1em;
     display: flex;
     align-items: center; }
@@ -5903,8 +5916,7 @@ span.hodiny {
 
 @media only screen and (min-width: 768px) {
   .popis-kurzu {
-    height: 56px;
-    background-color: #485884;
+    height: 55px;
     padding: 0 1em 0 1em;
     display: flex;
     align-items: center; }
@@ -5920,14 +5932,27 @@ span.hodiny {
     opacity: .7;
     transition: opacity 0.3s linear; }
   .thumbnail:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
     .thumbnail:hover a {
       color: #242c42; }
+    .thumbnail:hover .cena {
+      color: #242c42; }
+    .thumbnail:hover .hodiny {
+      color: #242c42; }
     .thumbnail:hover .kurz-img {
-      opacity: 1; } }
+      opacity: 1; }
+    .thumbnail:hover .line {
+      background-color: #242c42; } }
 
 .yellow {
-  background-color: #c19432; }
+  background-color: #EAA24B; }
+
+/*top header */
+@media screen and (max-width: 992px) {
+  .topbar-left {
+    display: none; }
+  .header-topbar {
+    text-align: center; } }
 
 header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topbar-icon {
   color: #86bc42;
@@ -6160,8 +6185,7 @@ header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 spa
   header .header-main .edugate-dropdown-menu-1 {
     padding: 0;
     text-align: right;
-    margin: 0 20px 0 20px;
-    border-bottom: 2px solid #86bc42 !important; }
+    margin: 0 20px 0 20px; }
   header .header-main .edugate-dropdown-menu-1 > li > .link-page {
     line-height: 40px !important;
     margin: 0;
@@ -6204,8 +6228,6 @@ header .header-topbar.homepage-03 a:hover, header .header-topbar.homepage-03 spa
     line-height: 50px;
     padding: 0 13px 0 10px;
     margin: 0; }
-  header .header-main.homepage-03.header-fixed .navigation .nav-links li.active .main-menu {
-    border-bottom: none; }
   header .header-main.homepage-03.header-fixed .navigation .nav-links li:hover .main-menu {
     background-color: transparent; }
   header .header-main.homepage-03.header-fixed .navigation .nav-links li:hover .main-menu:after {
@@ -6640,6 +6662,51 @@ ul.list-detail li i {
   color: #fff;
   padding: 0px 15px; }
 
+.main-logo {
+  width: 150px;
+  vertical-align: middle; }
+
+.lg0 {
+  enable-background: new; }
+
+.lg1 {
+  fill: #FFFFFF; }
+
+.lg2 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10; }
+
+.main-logo .a {
+  fill: white;
+  font-size: 40px;
+  font-family: Sitka Display; }
+
+.main-logo .b {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 3px; }
+
+.inverse-logo {
+  display: block;
+  width: 90px;
+  vertical-align: middle;
+  margin: auto; }
+
+.inverse-logo .a {
+  fill: #5a6ea5;
+  font-size: 40px;
+  font-family: 'Lato'; }
+
+.inverse-logo .b {
+  fill: none;
+  stroke: #5a6ea5;
+  stroke-miterlimit: 10;
+  stroke-width: 3px; }
+
 @media screen and (max-width: 768px) {
   .courses .group-title-index {
     margin-bottom: 60px; } }
@@ -7073,7 +7140,7 @@ html, body {
   margin-bottom: 0px; }
 
 .why-choose-us {
-  background-color: #464F66;
+  background-color: #364263;
   color: #fff; }
 
 .why-choose-us .why-choose-us-wrapper {
