@@ -40,7 +40,7 @@
                         <ul class="nav-links nav navbar-nav">
                             <li class="<?php if (is_page('kurzy') || ! empty ($GLOBALS['post']) && is_single() && in_category('kurzy', $GLOBALS['post']) ){echo 'active';} ?>"><a href="http://localhost/wordpress/kurzy/" class="main-menu">Kurzy</a></li>
                             <li class="<?php if (is_page('repas')){echo 'active';} ?>"><a href="http://localhost/wordpress/repas/" class="main-menu">Re-pas</a></li>
-                            <li><a href="#kontakt" class="main-menu">Kontakt</a></li>
+                            <li><a href="#kontakt" class="main-menu none-hover">Kontakt</a></li>
                         </ul>
                     </nav>
                 </div>

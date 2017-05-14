@@ -5960,8 +5960,9 @@ header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topba
   font-size: 16px; }
 
 .page-title-post {
-  background-position: top;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
   width: 100%;
   height: 300px;
   color: #fff;
@@ -6067,7 +6068,8 @@ header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topba
 .page-title {
   background-image: url("../assets/images/header_1.jpg");
   background-repeat: repeat;
-  background-position: center;
+  background-position: bottom;
+  background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 300px;
