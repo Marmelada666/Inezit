@@ -99,6 +99,7 @@
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding-xs karta-kurzy">
                                 <!--karta-->
                                 <div class="thumbnail">
+                                    <!-- obrazok kurzu -->
                                     <a href=" <?php the_permalink($b[$i]) ?> ">
                                         <div class="background-opacity-1">
                                             <div class="kurz-img" style="background-image: url(<?php the_field('ikonka_kurzu',$b[$i]) ?>);"></div>
@@ -111,7 +112,7 @@
                                         <div class="line"></div>
                                         <div class="kurz-info">
                                             <div class="popis-kurzu">
-                                                <span class="cena"><?php the_field('cena_kurzu',$b[$i]) ?> €</span><span class="hodiny"> 80 hodin</span>
+                                                <span class="cena"><?php the_field('cena_kurzu',$b[$i]) ?> €</span><span class="hodiny"><?php the_field('dlzka_kurzu',$b[$i]) ?> hodín</span>
                                             </div>
                                         </div>
                                     </div>
