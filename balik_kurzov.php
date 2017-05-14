@@ -152,56 +152,16 @@
                                         else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
                                             get_template_part( 'template-parts/post/content', 'none' );
                                         endif; ?>
-                                        <div class="clearfix"></div>
-                                        <div class="popular-course-widget widget col-sm-6 col-sm-12">
-                                            <div class="title-widget">Podobne kurzy</div>
-                                            <div class="content-widget">
-                                                <div class="media">
-                                                    <div class="media-left"><a href="courses-detail.php" class="link"><img src="img/bg-kurz.jpg" alt="" class="media-image"/></a></div>
-                                                    <div class="media-right">
-                                                        <div class="cur">35</div>
-                                                        <a href="courses-detail.php" class="link title">Adobe Lightroom CC for Photographers</a>
-
-                                                        <div class="info">
-                                                            <div class="author item"><a href="#"><span>By Sandara</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <div class="media-left"><a href="courses-detail.php" class="link"><img src="img/bg-kurz.jpg" alt="" class="media-image"/></a></div>
-                                                    <div class="media-right">
-                                                        <div class="cur">40</div>
-                                                        <a href="courses-detail.php" class="link title">Adobe Lightroom CC for Photographers</a>
-
-                                                        <div class="info">
-                                                            <div class="author item"><a href="#"><span>By Sandara</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <div class="media-left"><a href="courses-detail.php" class="link"><img src="img/bg-kurz.jpg" alt="" class="media-image"/></a></div>
-                                                    <div class="media-right">
-                                                        <div class="cur">34</div>
-                                                        <a href="courses-detail.php" class="link title">Adobe Lightroom CC for Photographers</a>
-
-                                                        <div class="info">
-                                                            <div class="author item"><a href="#"><span>By Sandara</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="media">
-                                                    <div class="media-left"><a href="courses-detail.php" class="link"><img src="img/bg-kurz.jpg" alt="" class="media-image"/></a></div>
-                                                    <div class="media-right">
-                                                        <div class="cur">27</div>
-                                                        <a href="courses-detail.php" class="link title">Adobe Lightroom CC for Photographers</a>
-
-                                                        <div class="info">
-                                                            <div class="author item"><a href="#"><span>By Sandara</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <?php
+                                        if ( have_posts() ) :
+                                            while ( have_posts() ) : the_post();
+                                                get_template_part( 'template-parts/widget', 'podobneKurzy' );
+                                            endwhile;
+                                        else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
+                                            get_template_part( 'template-parts/post/content', 'none' );
+                                        endif; ?>
                                     </div>
                                 </div>
                                 </div>

@@ -103,7 +103,6 @@
                                             get_template_part( 'template-parts/post/content', 'none' );
                                         endif; ?>
                                     </div>
-                                    </div>
                                 </div> <!-- end of sidebar -->
                                 </div>
                             </div>
