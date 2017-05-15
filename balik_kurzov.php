@@ -23,9 +23,23 @@
                             <div class="row">
                                 <div class="col-md-9 layout-left">
                                     <div class="course">
+                                        <!-- CO sa naucite  -->
+                                        <?php $ulList = get_field('co_sa_naucite') ?>
+                                        <?php if ($ulList) { ?>
+                                        <h2>Čo sa naučíte</h2>
+                                        <ul>
+                                            <?php $i = 0 ?>
+                                            <?php $kurzy = array('121','14','72','88','79','85') ?>
+                                            <?php do { ?>
+                                                <li><a href="<?php the_permalink($kurzy[$i]); ?>"><i class="material-icons">&#xE315;</i><span><?php echo esc_html( get_the_title($kurzy[$i]) ); ?></span></a></li>
+                                            <?php $i++ ?>
+                                            <?php } while($i < count($kurzy)) ?>
+                                        </ul>
+                                        <?php } ?>
                                         <?php while (have_posts() ) : the_post()  ?>
                                             <?php the_content(); ?>
                                         <?php endwhile ?>
+                                        <h2>Učebný plán</h2>
                                     </div>
                                     <div class="syllabus">
                                             <!-- Ucebny plan tabulka -->

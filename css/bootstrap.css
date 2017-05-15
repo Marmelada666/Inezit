@@ -5855,6 +5855,8 @@ button.close {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
   .thumbnail:hover a {
     color: #2C4459; }
+  .thumbnail:hover .line {
+    width: 100%; }
 
 .kurz-img {
   height: 262px;
@@ -5878,10 +5880,10 @@ span.hodiny {
 
 .line {
   height: 1px;
-  width: 68%;
+  width: 45%;
   margin: auto;
-  background-color: #a9b3bc;
-  transition: background-color .3s linear; }
+  background-color: #c5cdd3;
+  transition: width .2s linear; }
 
 .karta-kurzy {
   margin: 3px 0 1em 0; }
@@ -5929,7 +5931,7 @@ span.hodiny {
     font-size: 18px;
     line-height: 1.9em; }
   .kurz-img {
-    opacity: .7;
+    opacity: 1;
     transition: opacity 0.3s linear; }
   .thumbnail:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
@@ -5940,9 +5942,7 @@ span.hodiny {
     .thumbnail:hover .hodiny {
       color: #2C4459; }
     .thumbnail:hover .kurz-img {
-      opacity: 1; }
-    .thumbnail:hover .line {
-      background-color: #2C4459; } }
+      opacity: 1; } }
 
 .yellow {
   background-color: #EAA24B; }
@@ -6020,6 +6020,7 @@ header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topba
 .page-title-post .page-title-post-wrapper {
   display: table-cell;
   vertical-align: middle;
+  padding-top: 3em;
   position: relative;
   z-index: 2; }
 
@@ -6071,6 +6072,7 @@ header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topba
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
+  padding-top: 3em;
   width: 100%;
   height: 300px;
   color: #fff;
@@ -6550,9 +6552,21 @@ h5 {
   display: block;
   margin-top: 5px; }
 
+.course h3 {
+  margin-top: 2em; }
+
 .course ul {
   list-style: none;
   padding: 0; }
+
+.course li {
+  line-height: 1.8em; }
+
+.course ul li a {
+  color: #737373; }
+
+.course ul li a:hover {
+  color: #86bc42; }
 
 .course ul li i {
   font-size: 14px;
@@ -7839,6 +7853,11 @@ iframe {
 .kontakt {
   position: relative;
   z-index: 1; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 30%; }
 
 .modal-content {
   border-radius: 0;

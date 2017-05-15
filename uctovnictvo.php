@@ -23,9 +23,22 @@
                             <div class="row">
                                 <div class="col-md-9 layout-left">
                                     <div class="course">
+                                    <!-- CO sa naucite  -->
+                                    <?php $ulList = get_field('co_sa_naucite') ?>
+                                    <?php if ($ulList) { ?>
+                                    <h2>Čo sa naučíte</h2>
+                                    <ul>
+                                        <?php foreach ($ulList['body'] as $li) { ?>
+                                            <?php foreach ($li as $item) { ?>
+                                                <li><i class="material-icons">&#xE315;</i><span><?php echo $item['c']; ?></span></li>
+                                            <?php } ?>   
+                                        <?php } ?>
+                                    </ul>
+                                    <?php } ?>
                                         <?php while (have_posts() ) : the_post()  ?>
-                                        	<?php the_content(); ?>
-										<?php endwhile ?>
+                                            <?php the_content(); ?>
+                                        <?php endwhile ?>
+                                    <h2>Učebný plán</h2>
                                 	</div>
                                 	<div class="syllabus">
 										<?php while (have_posts() ) : the_post()  ?>
