@@ -6551,7 +6551,17 @@ h5 {
   margin-top: 5px; }
 
 .course ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
+
+.course ul li i {
+  font-size: 14px;
+  display: table-cell;
+  color: #86bc42; }
+
+.course ul li span {
+  display: table-cell;
+  padding-left: 1em; }
 
 .underline::after {
   width: 50px;
