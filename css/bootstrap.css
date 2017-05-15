@@ -6550,6 +6550,9 @@ h5 {
   display: block;
   margin-top: 5px; }
 
+.course ul {
+  list-style: none; }
+
 .underline::after {
   width: 50px;
   height: 5px;

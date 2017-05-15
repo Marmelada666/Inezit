@@ -23,6 +23,14 @@
                             <div class="row">
                                 <div class="col-md-9 layout-left">
                                     <div class="course">
+                                    <?php $ulList = get_field('co_sa_naucite') ?>
+                                    <ul>
+                                        <?php foreach ($ulList['body'] as $li) { ?>
+                                            <?php foreach ($li as $item) { ?>
+                                                <li><?php echo $item['c']; ?></li>
+                                            <?php } ?>   
+                                        <?php } ?>
+                                    </ul>
                                         <?php while (have_posts() ) : the_post()  ?>
                                         	<?php the_content(); ?>
 										<?php endwhile ?>
