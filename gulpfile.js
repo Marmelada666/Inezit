@@ -8,7 +8,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('sass', function() {
 	return gulp.src('bower_components/bootstrap-sass/assets/stylesheets/**/*.scss')
 	.pipe(sass()) //Using gulp sass
-	.pipe(gulp.dest('css'))
+	.pipe(gulp.dest('assets/css'))
 	.pipe(browserSync.reload({
 		stream: true
 	}))

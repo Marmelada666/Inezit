@@ -21,7 +21,7 @@
                     <div class="container">
                         <div class="courses-detail-wrapper">
                             <div class="row">
-                                    <div class="col-md-9 layout-left">
+                                    <div class="col-sm-12 col-md-9 layout-left">
                                         <div class="course">
                                         <!-- CO sa naucite  -->
                                         <?php $ulList = get_field('co_sa_naucite') ?>

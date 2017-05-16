@@ -6067,7 +6067,7 @@ header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topba
   background-color: rgba(10, 15, 28, 0.7); }
 
 .page-title {
-  background-image: url("../assets/images/header_1.jpg");
+  background-image: url("../images/header_1.jpg");
   background-repeat: repeat;
   background-position: bottom;
   background-attachment: fixed;
@@ -7151,7 +7151,7 @@ html, body {
   padding: 100px 0; }
 
 .slider-banner-03 {
-  background-image: url("../assets/images/header_1.jpg");
+  background-image: url("../images/header_1.jpg");
   color: #fff;
   background-size: cover;
   background-position: center bottom; }
