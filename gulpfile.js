@@ -8,6 +8,8 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
+//css nano
+var cssnano = require('gulp-cssnano');
 
 
 // sass task
@@ -26,7 +28,7 @@ gulp.task('watch',['browserSync', 'sass'], function(){
 	// Other watchers
 	gulp.watch('*.php', browserSync.reload);
 	gulp.watch('css/*.css', browserSync.reload);
-	gulp.watch('assets/css/*.css', browserSync.reload);
+	gulp.watch('assets/css/**/*.css', browserSync.reload);
 });
 
 //brorwser-sync 
@@ -44,6 +46,11 @@ gulp.task('js', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('./assets/js'))
+});
+gulp.task('css', function() {
+	return gulp.src('./assets/css/bootstrap.css')
+		.pipe(cssnano())
+		.pipe(gulp.dest('./assets/css.min'))
 });
 
 

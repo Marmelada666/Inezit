@@ -16,7 +16,7 @@ function inezit_setup()
 add_action('wp_enqueue_scripts','inezit_scripts');
 function inezit_scripts(){
 	// Theme stylesheet.
-	wp_enqueue_style('inezit-style',get_template_directory_uri() . '/assets/css/bootstrap.css');
+	wp_enqueue_style('inezit-style',get_template_directory_uri() . '/assets/css.min/bootstrap.css');
 	wp_enqueue_style('inezit-google-font', 'https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,300');
 	wp_enqueue_style('inezit-glypher-css', get_template_directory_uri() . '/assets/font/font-icon/font-svg/css/Glyphter.css');
 	wp_enqueue_style('inezit-material-icons-css', 'https://fonts.googleapis.com/icon?family=Material+Icons');
