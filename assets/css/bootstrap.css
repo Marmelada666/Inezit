@@ -5947,12 +5947,18 @@ span.hodiny {
 .yellow {
   background-color: #EAA24B; }
 
-/*top header */
-@media screen and (max-width: 992px) {
-  .topbar-left {
-    display: none; }
-  .header-topbar {
-    text-align: center; } }
+.slider-banner-03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/header_1.jpg");
+  color: #fff;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 600px;
+  min-height: 100vh; }
 
 header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topbar-icon {
   color: #86bc42;
@@ -7149,18 +7155,6 @@ html, body {
 
 .section-padding {
   padding: 100px 0; }
-
-.slider-banner-03 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url("../images/header_1.jpg");
-  color: #fff;
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
-  width: 100%;
-  min-height: 568px; }
 
 .choose-course-3 .choose-course-3-wrapper.row {
   margin: 0; }
