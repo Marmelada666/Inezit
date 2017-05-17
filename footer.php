@@ -11,7 +11,7 @@
                                         <div class="content-widget">
                                             <div class="info-list">
                                                 <ul class="list-unstyled">
-                                                    <li><i class="fa fa-envelope-o"></i><a href="#"><?php the_field('emailova_adresa',163) ?></a></li>
+                                                    <li><i class="fa fa-envelope-o"></i><a href="mailto:<?php the_field('emailova_adresa',163) ?>"><?php the_field('emailova_adresa',163) ?></a></li>
                                                     <li><i class="fa fa-phone"></i><a href="tel:<?php the_field('telefonne_cislo',163) ?>"><?php the_field('telefonne_cislo',163) ?></a></li>
                                                     <li><i class="fa fa-map-marker"></i>
                                                         <a href="#">
