@@ -9,8 +9,8 @@
                     <div class="container">
                         <div class="page-title-wrapper"><!--.page-title-content--><h2 class="captions">Všetky kurzy</h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.php">Domov</a></li>
-                                <li class="active"><a href="courses-detail.php">Kurzy</a></li>
+                                <li><a href="<?php echo get_home_url() ?>">Domov</a></li>
+                                <li class="active"><a href="">Kurzy</a></li>
                             </ol>
                         </div>
                     </div>

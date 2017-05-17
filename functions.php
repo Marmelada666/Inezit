@@ -379,5 +379,3 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
-
-

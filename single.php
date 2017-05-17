@@ -9,11 +9,14 @@
                 <div class="section background-opacity page-title-post set-height-top" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>);">
                     <div class="container">
                         <div class="page-title-post-wrapper"><!--.page-title-content--><h2 class="captions"><?php the_title(); ?></h2>
-                            <ol class="breadcrumb">
-                                <li><a href="index.php">Domov</a></li>
-                                <li><a href="courses.php">Kurzy</a></li>
-                                <li><a href="courses-detail.php"><?php the_title(); ?></a></li>
-                            </ol>
+                            <?php
+                            if ( have_posts() ) :
+                                while ( have_posts() ) : the_post();
+                                    get_template_part( 'template-parts/widget', 'breadCrumb' );
+                                endwhile;
+                            else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
+                                get_template_part( 'template-parts/post/content', 'none' );
+                            endif; ?>
                         </div>
                     </div>
                 </div>

@@ -10,7 +10,7 @@
                     <div class="container">
                         <div class="page-title-wrapper"><h2 class="captions">Projekt Re-pas</h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html">Domov</a></li>
+                                <li><a href="<?php echo get_home_url() ?>">Domov</a></li>
                                 <li class="active"><a href="#">Re-pas</a></li>
                             </ol>
                         </div>

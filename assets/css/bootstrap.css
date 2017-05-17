@@ -5951,13 +5951,14 @@ span.hodiny {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image: url("../images/header_1.jpg");
   color: #fff;
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
   width: 100%;
-  min-height: 600px;
+  height: 600px;
   min-height: 100vh; }
 
 header .header-topbar .email .topbar-icon, header .header-topbar .hotline .topbar-icon {

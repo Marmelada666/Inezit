@@ -26,7 +26,8 @@ gulp.task('sass', function() {
 gulp.task('watch',['browserSync', 'sass'], function(){
 	gulp.watch('bower_components/bootstrap-sass/assets/stylesheets/**/*.scss', ['sass']);
 	// Other watchers
-	gulp.watch('*.php', browserSync.reload);
+	gulp.watch('./*.php', browserSync.reload);
+	gulp.watch('./template-parts/*.php', browserSync.reload);
 	gulp.watch('css/*.css', browserSync.reload);
 	gulp.watch('assets/css/**/*.css', browserSync.reload);
 });
