@@ -16,7 +16,7 @@
                                 <h1 data-wow-delay="0.5s" class="main-title wow fadeInUp">Pridajte sa k 2000+ spokojným absolventom</h1>
                                 <div class="group-button">
                                     <!-- <button data-wow-delay="1.3s" data-wow-duration="1s" class="btn btn-transition-3 wow fadeInLeft"><span>Puschase theme</span></button> -->
-                                    <button onclick="window.location.href='courses.php'" data-wow-delay="1.3s" data-wow-duration="1s" class="btn btn-green-3 wow fadeInRight"><span>Zobraziť kurzy</span></button>
+                                    <button onclick="window.location.href='http://localhost/wordpress/kurzy/'" data-wow-delay="1.3s" data-wow-duration="1s" class="btn btn-green-3 wow fadeInRight"><span>Zobraziť kurzy</span></button>
                                 </div>
                             </div>
                         </div>
