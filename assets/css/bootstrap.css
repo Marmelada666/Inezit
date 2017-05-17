@@ -6709,6 +6709,7 @@ ul.list-detail li i {
   padding: 0px 15px; }
 
 .main-logo {
+  height: 42px;
   width: 150px;
   vertical-align: middle;
   float: left; }

@@ -14,7 +14,7 @@
                                                     <li><i class="fa fa-envelope-o"></i><a href="mailto:<?php the_field('emailova_adresa',163) ?>"><?php the_field('emailova_adresa',163) ?></a></li>
                                                     <li><i class="fa fa-phone"></i><a href="tel:<?php the_field('telefonne_cislo',163) ?>"><?php the_field('telefonne_cislo',163) ?></a></li>
                                                     <li><i class="fa fa-map-marker"></i>
-                                                        <a href="#">
+                                                        <a href="#mapa">
                                                             <p><?php the_field('firemna_adresa_ulica',163) ?></p>
                                                             <p><?php the_field('firemna_adresa_mesto',163) ?></p>
                                                         </a>
@@ -35,9 +35,9 @@
                 </div> <!-- end of container -->
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="map-wrapper">
+                            <div class="map-wrapper" >
                                 <div class="overlay" onClick="style.pointerEvents='none'"></div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.4738587136253!2d18.617738515485026!3d48.772843114680654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714dcf1c911d323%3A0x737b64512a616081!2sMgr.+J%C3%A1n+Svitok+-+TOP+Systemsa!5e0!3m2!1ssk!2ssk!4v1494414475697" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>  
+                                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.4738587136253!2d18.617738515485026!3d48.772843114680654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714dcf1c911d323%3A0x737b64512a616081!2sMgr.+J%C3%A1n+Svitok+-+TOP+Systemsa!5e0!3m2!1ssk!2ssk!4v1494414475697" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>  
                             </div>
                         </div> <!-- end of row -->
                     </div>
