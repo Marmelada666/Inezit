@@ -1,0 +1,21 @@
+{
+  "name": "inezit",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Maro <taziarmarek@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 3",
+    "bootstrap-sass": "^3.3.5"
+  }
+}
