@@ -12,12 +12,21 @@
     "gulp-uglify": "^2.1.2"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-jshint": "^2.0.4",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "jshint": "^2.9.4"
+    "gulp-sourcemap": "^1.0.1",
+    "jshint": "^2.9.4",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "postcss-cli": "^4.0.0",
+    "postcss-load-config": "^1.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass --output-style compressed -o assets/css assets/scss/main.scss",
+    "fixer": "postcss -u autoprefixer -r assets/css/*"
   },
   "author": "",
   "license": "ISC"

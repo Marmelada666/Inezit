@@ -1,0 +1,398 @@
+body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #737373;
+    background-color: #ffffff;
+    transition: font-size .3s linear;
+}
+
+.container {
+    transition: width .3s linear;
+}
+
+.group-title-index {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+    color: #49575f
+}
+
+.group-title-index .center-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+p, a, label, span {
+    font-size: 16px;
+}
+
+p strong {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none
+}
+
+a {
+    transition: all 0.2s ease
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold
+}
+
+h5 {
+    font-weight: normal
+}
+//Tituly
+.page-title .page-title-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 2.5em;
+    z-index: 2
+}
+.page-title .captions {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 0 7px 0
+}
+
+.title-2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 25px
+}
+
+.title-news {
+    font-size: 36px;
+    font-weight: 900;
+    color: #49575f;
+    margin: 0 0 5px 0
+}
+
+.news-content {
+    margin: 40px 0px 100px
+}
+.news-detail {
+    color: #6f8190
+}
+.news-detail p {
+    line-height: 24px
+}
+
+.news-detail span {
+    color: #49575f
+}
+
+.news-detail .info .item a:hover span {
+    color: $accent
+}
+.news-content .news-des p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px
+}
+.news-list {
+    margin-bottom: 70px
+}
+.underline {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #49575f
+}
+// wordpress
+.course h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #49575f
+}
+
+.course h2::after {
+    width: 50px;
+    height: 5px;
+    background-color: $accent2;
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 5px;
+}
+.course h3 {
+    margin-top: 2em;
+}
+
+.course ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course li {
+    line-height: 1.8em;
+}
+
+.course ul li a {
+    color:#737373;
+}
+.course ul li a:hover {
+    color:$accent;
+}
+
+.course ul li i {
+    font-size: 14px;
+    display: table-cell;
+    color: $accent2;
+}
+.course ul li span {
+    display: table-cell;
+    padding-left:1em;
+}
+
+.underline::after {
+    width: 50px;
+    height: 5px;
+    background-color: $accent2;
+    content: "";
+    position: absolute;
+    display: block
+}
+.courses-detail p {
+    line-height: 24px
+}
+.slider-banner-02 .slider-banner-wrapper .sub-title, .slider-banner-03 .slider-banner-wrapper .sub-title {
+    font-size: 1.7em;
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.slider-banner-02 .slider-banner-wrapper .main-title, .slider-banner-03 .slider-banner-wrapper .main-title {
+    font-size: 3em;
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700
+}
+@media screen and (max-width: 600px){
+    .slider-banner-02 .slider-banner-wrapper .sub-title, .slider-banner-03 .slider-banner-wrapper .sub-title {
+        font-size: 24px;
+        margin-bottom: 20px
+    }
+    .slider-banner-02 .slider-banner-wrapper .main-title, .slider-banner-03 .slider-banner-wrapper .main-title {
+        font-size: 3em;
+        margin-bottom: 40px
+    }
+}
+.group-title-index .bottom-title {
+    position: relative;
+    display: inline-block
+}
+.group-title-index .bottom-title .bottom-icon {
+    margin: 0 auto;
+    font-size: 26px;
+    color: $accent2;
+}
+.group-title-index .top-title {
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.group-title-index .bottom-title:after, .group-title-index .bottom-title:before {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 2px;
+    background-color: $accent2;
+    top: 50%;
+    margin-top: -5px
+}
+.courses .group-title-index {
+    margin-bottom: 90px
+}
+
+.group-title-index .bottom-title:after {
+    left: -32px
+}
+
+.group-title-index .bottom-title:before {
+    right: -32px
+}
+.list-expand-title {
+    color: #49575f;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+ul.list-detail {
+    padding: 0px;
+    margin: 0px
+}
+
+ul.list-detail li {
+    margin-bottom: 15px;
+    display: table
+}
+
+ul.list-detail li a {
+    display: table-cell;
+    color: #6f8190
+}
+
+ul.list-detail li a:hover {
+    color: $accent
+}
+
+ul.list-detail li i {
+    display: table-cell;
+    width: 25px;
+    color: $accent;
+    font-weight: bold;
+    font-size: 10px
+}
+
+.news-tag ul li {
+    display: inline-block;
+    background-color: #e9eef2;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    transition: all .3s ease-in
+}
+.course-des {
+    margin-bottom: 50px
+}
+
+.news-tag ul li:first-child {
+    background-color: #2c343b
+}
+
+.news-tag ul li:first-child:hover {
+    background-color: #2c343b
+}
+
+.news-tag ul li:hover {
+    background-color: $accent-dark
+}
+
+.news-tag ul li:hover a {
+    color: #fff
+}
+
+.news-tag ul li a {
+    color: #2c343b;
+    padding: 0px 15px;
+    display: inherit
+}
+
+.news-tag ul li i {
+    color: #fff;
+    padding: 0px 15px
+}
+
+// LOGO
+.main-logo {
+    height: 42px; //pre ie9
+    width: 115px;
+}
+
+.lg0{enable-background:new ;
+} 
+.lg1{fill:white;
+} 
+.lg2{fill:none;
+    stroke:white;
+    stroke-width:3;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
+
+.main-logo .a {
+    fill:white;
+    font-size:40px;
+    font-family: Sitka Display;
+}
+.main-logo .b {
+    fill:none;
+    stroke:white;
+    stroke-miterlimit:10;
+    stroke-width:3px;
+}
+
+// Logo na prihlaske
+.inverse-logo {
+    display: block;
+    width: 90px;
+    vertical-align: middle;
+    margin:auto;
+}
+
+.inverse-logo .a {
+    fill:$accent-less-dark;
+    font-size:40px;
+    font-family: 'Lato';
+}
+.inverse-logo .b {
+    fill:none;
+    stroke:$accent-less-dark;
+    stroke-miterlimit:10;
+    stroke-width:3px;
+}
+
+@media screen and (max-width: 768px){
+    .courses .group-title-index {
+        margin-bottom: 60px
+    }
+    .page-title {
+        height: 300px;
+    }
+    .page-title-wrapper {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .slider-banner-02 .slider-banner-wrapper .sub-title, .slider-banner-03 .slider-banner-wrapper .sub-title {
+    font-size: 1.3em;
+    margin-bottom: 15px
+    }
+    .slider-banner-02 .slider-banner-wrapper .main-title, .slider-banner-03 .slider-banner-wrapper .main-title {
+        font-size: 2em;
+        margin-bottom: 30px
+    }
+    .group-title-index .center-title {
+        font-size: 24px
+    }
+    .page-title-post-wrapper .captions {
+        font-size: 2em;
+        margin-top: 2em;
+    }
+
+}
+@media screen and (max-width: 380px){
+    .page-title .captions {
+        font-size: 28px;
+    }
+    .group-title-index {
+        margin-bottom: 30px
+    }
+    .group-title-index .center-title {
+        margin-bottom: 5px
+    }
+    .page-title-post-wrapper .captions {
+        font-size: 2em;
+    }
+}

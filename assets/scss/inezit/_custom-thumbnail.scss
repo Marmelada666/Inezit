@@ -1,0 +1,164 @@
+
+.thumbnail .caption {
+    padding: 0;
+} 
+.thumbnail {
+    padding: 0;
+    border-radius: 0px;
+    border: none;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.thumbnail a {
+    color:$tableHeaderText;
+    transition: all 0.3s linear;
+}
+.thumbnail .titulok {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    font-weight: 400;
+    padding: 1em;
+}
+.col-xs-12 {
+    transition: width .3s linear;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.300);
+    a {
+    color:$accent-dark;
+    }
+    .line{
+        width: 100%;
+    }
+}
+.kurz-img {
+    height: 262px;
+    background-position: center;
+    background-size: cover;
+}
+.background-opacity-1 {
+    background-color: $accent-less-dark;
+}
+
+.popis-kurzu .cena {
+    position: relative;
+    top: 0.5em;
+    left: -0.5em;
+    display: block;
+    padding: 0.5em;
+    background-color: $accent2;
+    color: white;
+    font-size: 1.7em;
+    color: white;
+    float: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.300);
+    transition: box-shadow .3s linear; 
+}
+span.hodiny {
+    display: flex;
+    height: 100%;
+    float: right;
+    align-items: center;
+    padding-right: 1em;
+    color: $tableHeaderText;
+    transition: color .3s linear;
+}
+.line {
+    height: 1px;
+    width: 45%;
+    margin: auto;
+    background-color: lighten($tableHeaderText,30%);
+    transition: width .2s linear;
+}
+
+.karta-kurzy {
+    margin: 3px 0 1em 0;
+} 
+
+//sekcie kurzov
+.kategoria {
+    margin-bottom: 200px;
+}
+    .popis-kurzu {
+        height: 55px;
+    }
+    .titul-kurzu {
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_3 .kurz-info {
+      font-size: 18px;
+      line-height: 1.9em;
+    }
+    .kurz-img {
+        opacity: 1;
+        transition: opacity 0.3s linear;
+    }
+    .thumbnail:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.300);
+    a {
+    color:$accent-dark;
+    }
+    .hodiny {
+    color:$accent-dark;
+    }
+    .kurz-img {
+        opacity: 1;
+    }
+    .popis-kurzu .cena {
+        box-shadow: none;
+    }
+}
+@media (max-width: $screen-xs-max) {
+    .no-padding-xs {
+        padding: 0;
+    }
+    .kurz-info {
+        width: 62%;
+        float: right;
+        height: 66px;
+    }
+    .popis-kurzu {
+        height: 100%;
+    }
+    .karta-kurzy {
+        margin: 3px 0 3px 0;
+    } 
+    .thumbnail {
+        height: 262px;
+    }
+    .thumbnail .caption {
+        padding: 0;
+    }  
+    .kurz-img {
+        float: left;
+        width: 38%;
+    }
+    .titul-kurzu {
+        height: 196px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .kurz-img {
+        opacity: 1;
+    } 
+    .popis-kurzu .cena {
+        position: static;
+        height: 100%;
+        box-shadow: none;
+    }   
+    .line {
+        display: none;
+    }
+}
+
+.yellow {
+    background-color: $accent-yellow;
+}
+
+

@@ -1,0 +1,272 @@
+.sidebar a {
+    color: #6f8190
+}
+
+.sidebar .row {
+    margin-bottom: 3em;
+}
+
+.sidebar .title-widget {
+    background-color: $accent-dark;
+    color: #fff;
+    text-align: center;
+    line-height: 50px
+}
+
+.sidebar .edugate-widget .content-widget, .sidebar .useful-link-widget .content-widget, .sidebar .gallery-widget .content-widget, .sidebar .mailing-widget .content-widget {
+    margin: 20px 0px
+}
+
+.sidebar .widget:last-child {
+    margin-bottom: 0 !important
+}
+
+.widget {
+    margin-bottom: 30px
+}
+
+.widget a:hover {
+    color: $accent
+}
+
+.widget p {
+    line-height: 24px
+}
+
+.widget .title-widget {
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.widget .media {
+    border-bottom: 1px solid #dee5e9;
+    padding: 20px 0px;
+    margin: 0px
+}
+
+.widget .media:last-child {
+    border-bottom: none;
+    padding-bottom: 0
+}
+
+.widget .media a {
+    display: block;
+    float: left;
+}
+
+.widget .media a .media-left {
+    padding-right: 0;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.widget .media .media-right {
+    padding-left: 15px
+}
+
+.widget .media .media-right span {
+    font-size: 12px
+}
+
+.widget .media .media-right .comment {
+    float: right
+}
+
+.widget .media .media-right .comment i {
+    margin-right: 3px
+}
+
+.widget .media .media-right p {
+    margin: 0px
+}
+
+.widget .media .info {
+    display: inline-block
+}
+
+.widget .media .link {
+    display: inline-block;
+    color: #6f8190
+}
+
+.widget .media .media-image {
+    background-size: cover;
+}
+
+.widget .media .link:hover {
+    color: $accent
+}
+
+.edugate-widget p {
+    margin-bottom: 20px
+}
+
+.edugate-widget .info-list ul {
+    margin-bottom: 0px
+}
+
+.edugate-widget .info-list ul li {
+    display: table;
+    border-top: 1px solid #2F374C;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px
+}
+
+.edugate-widget .info-list ul li > i {
+    display: table-cell;
+    width: 25px
+}
+
+.edugate-widget .info-list ul li > a {
+    display: table-cell
+}
+
+.edugate-widget .info-list p {
+    margin-bottom: 0px
+}
+.course-price-widget .title-widget p {
+    position: relative;
+    line-height: 80px;
+    font-size: 48px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0
+}
+
+.course-price-widget .title-widget p:before {
+    position: absolute;
+    content: '€';
+    font-size: 25px;
+    top: -15px;
+    right: -16px
+}
+
+.course-price-widget-wrapper {
+    background-color: #fafafa;
+    padding: 30px;
+    margin-bottom: 0;
+    color: #6f8190;
+    text-align: center
+}
+
+.course-price-widget-wrapper .title {
+    color: $accent-dark
+}
+
+.course-price-widget-wrapper .length {
+    position: relative;
+    left: -38px
+}
+
+.course-price-widget-wrapper .length:after {
+    position: absolute;
+    left: 22px
+}
+
+.course-price-widget-wrapper .firgue {
+    position: relative;
+    left: -44px
+}
+
+.course-price-widget-wrapper .firgue:after {
+    position: absolute;
+    content: '';
+    left: 19px
+}
+
+.course-price-widget-wrapper .info-row {
+    margin-bottom: 15px
+}
+
+.course-price-widget-wrapper .info-row:last-child {
+    margin-bottom: 25px
+}
+
+.course-price-widget-wrapper span {
+    text-align: left
+}
+.cur {
+    color: $accent2;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: -5px;
+    position: relative;
+    margin-left: 7px
+}
+
+.cur:before {
+    position: absolute;
+    content: "€";
+    top: 0px;
+    left: -8px;
+    font-size: 13px
+}
+
+@media screen and (max-width: 768px){
+
+   .sidebar {
+        margin-top: 70px
+    }
+}
+
+// google mapa
+
+iframe {
+    height: 400px;
+    width: 100%;
+}
+
+.overlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:400px; /* your iframe height */
+   top:400px;  /* your iframe height */
+   margin-top:-400px;  /* your iframe height */ 
+}
+
+
+.mailing-widget .frm_form_fields div input {
+    height:40px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    background-color: white !important;
+    transition: all 0.3s linear;
+    box-shadow: 0px 0px 0px #131313 !important;
+}
+.mailing-widget .frm_form_fields div input:focus {
+    box-shadow: 0px 0px 10px #131313 !important;
+}
+.mailing-widget .frm_form_fields div textarea {
+    border-radius: 0 !important;
+    border: none !important;
+    background-color: white !important;
+    transition: all 0.3s linear;
+    box-shadow: 0px 0px 0px #131313 !important;
+}
+.mailing-widget .frm_form_fields div textarea:focus {
+    box-shadow: 0px 0px 10px #131313 !important;
+}
+.mailing-widget .frm_form_fields div label {
+    color: white !important;
+    font-weight: 100 !important;
+    margin-bottom: 0.5em !important;
+}
+
+@media screen and (max-width: 768px) {
+    .overlay {
+        display: none;
+    }
+}
+
+.kontakt {
+    position: relative;
+    z-index: 1;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 30%; 
+}

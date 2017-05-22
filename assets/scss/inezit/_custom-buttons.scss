@@ -1,0 +1,393 @@
+.group-button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.btn {
+    border: 0;
+    border-radius: 0;
+    padding: 0 25px;
+    background: transparent;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.2s ease
+}
+
+.btn span {
+    margin-bottom: 0 !important;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    transition: all 0.25s ease
+}
+
+.btn i {
+    margin-left: 10px
+}
+
+.btn.btn-green {
+    background-color: $accent
+}
+
+.btn.btn-green:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    background-color: $accent-dark;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
+
+.btn.btn-green:hover {
+    color: #fff
+}
+
+.btn.btn-green:hover:after {
+    right: 0
+}
+
+.btn.btn-green:focus span {
+    color: #fff
+}
+
+.btn.btn-green-2 {
+    line-height: 40px;
+    background-color: transparent
+}
+
+.btn.btn-green-2:before {
+    position: absolute;
+    content: '';
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    left: 0
+}
+
+.btn.btn-green-2:after {
+    position: absolute;
+    content: '';
+    background-color: $accent2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0
+}
+
+.btn.btn-green-2:hover {
+    color: #fff
+}
+
+.btn.btn-green-2:hover:after {
+    right: -100%
+}
+
+.btn.btn-green-2:focus span {
+    color: #fff
+}
+
+.btn.btn-green-3 {
+    line-height: 40px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn.btn-green-3:before {
+    position: absolute;
+    content: '';
+    border: 2px solid $accent;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+.btn.btn-green-3:after {
+    position: absolute;
+    content: '';
+    background-color: $accent;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.btn.btn-green-3:hover {
+    color: $accent
+}
+
+.btn.btn-green-3:hover:after {
+    right: -100%
+}
+
+.btn.btn-green-3:focus span {
+    color: $accent
+}
+
+.btn.btn-transition {
+    line-height: 40px;
+    background-color: transparent;
+    padding: 0 27px
+}
+
+.btn.btn-transition:before {
+    position: absolute;
+    content: '';
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    left: 0
+}
+
+.btn.btn-transition:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    background-color: $accent;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
+
+.btn.btn-transition:hover {
+    color: #fff
+}
+
+.btn.btn-transition:hover:after {
+    right: 0
+}
+
+.btn.btn-transition:focus span {
+    color: #fff
+}
+
+.btn.btn-transition-2 {
+    line-height: 40px;
+    background-color: transparent;
+    color: $accent-dark;
+    padding: 0 27px
+}
+
+.btn.btn-transition-2:before {
+    position: absolute;
+    content: '';
+    border: 2px solid $accent-dark;
+    width: 100%;
+    height: 100%;
+    left: 0
+}
+
+.btn.btn-transition-2:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    background-color: $accent-dark;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
+
+.btn.btn-transition-2:hover span {
+    color: #fff
+}
+
+.btn.btn-transition-2:hover:after {
+    right: 0
+}
+
+.btn.btn-transition-2:focus span {
+    color: $accent-dark
+}
+
+.btn.btn-transition-2:focus:hover span {
+    color: #fff
+}
+
+.btn.btn-transition-3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 50px;
+    background-color: $accent-dark;
+    padding: 0 27px;
+    border: 2px solid $accent-dark;
+}
+
+.btn.btn-transition-3:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0
+}
+
+.btn.btn-transition-3:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.btn.btn-transition-3:hover {
+}
+
+.btn.btn-transition-3:hover:after {
+    right: 0
+}
+
+.btn.btn-transition-3:hover:before {
+    border-left-color: $accent-dark
+}
+
+.btn.btn-transition-3:focus span {
+    color: $accent
+}
+
+.btn.btn-blue {
+    background-color: $accent-dark
+}
+
+.btn.btn-blue:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
+
+.btn.btn-blue:hover {
+    color: $accent
+}
+
+.btn.btn-blue:hover:after {
+    right: 0
+}
+
+.btn.btn-blue:focus span {
+    color: $accent
+}
+
+.btn.btn-grey {
+    background-color: #90a1ae;
+    width: 170px;
+    line-height: 40px
+}
+
+.btn.btn-grey:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    background-color: $accent;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
+
+.btn.btn-grey:hover {
+    color: #fff
+}
+
+.btn.btn-grey:hover:after {
+    right: 0
+}
+
+.btn.btn-grey:focus span {
+    color: #fff
+}
+
+.btn.btn-bold {
+    font-weight: bold;
+    letter-spacing: 1px
+}
+
+.btn.btn-404 {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    background-color: #e9edf5;
+    border: none
+}
+
+.btn.btn-404 span {
+    font-weight: 900;
+    font-size: 24px;
+    color: #fff
+}
+
+.btn.btn-404:after {
+    position: absolute;
+    content: '';
+    right: 100%;
+    background-color: $accent;
+    width: 100%;
+    height: 100%;
+    top: 0
+}
+
+.btn.btn-404:hover {
+    color: #fff
+}
+
+.btn.btn-404:hover:after {
+    right: 0
+}
+
+.btn.btn-404:focus span {
+    color: #fff
+}
+
+.btn.btn-green:after, .btn.btn-green-2:after, .btn.btn-green-3:after, .btn.btn-transition:after, .btn.btn-transition-2:after, .btn.btn-transition-3:after, .btn.btn-blue:after, .btn.btn-grey:after, .btn.btn-404:after {
+    transition: all 0.5s ease
+}
+
+
+.btn-list-grid li {
+    display: inline-block
+}
+
+.btn-list-grid li.active button {
+    background: #49575f;
+    color: #fff
+}
+
+.btn-list-grid li.active:hover button {
+    background: #49575f
+}
+
+.btn-list-grid li:hover button {
+    background: rgba(73, 87, 95, 0.5);
+    color: #fff
+}
+
+.btn-list-grid .btn-list, .btn-list-grid .btn-grid {
+    display: inline-block;
+    border: none;
+    background: transparent;
+    transition: all .2s ease-in-out
+}
+
+.btn-list-grid .btn-grid {
+    margin-right: 10px
+}
+.mailing-widget .btn-email {
+    background-color: $accent;
+    line-height: 33px;
+    text-align: center;
+    padding: 0px 14px;
+    width: 39px
+}
+.prihlaska-btn {
+    width: 120px;
+    margin: auto;
+}
+

@@ -1,0 +1,22 @@
+$dollar-bill : #86bc42;
+$deep-carrot : #ed6639;
+$kiwi : #8dd64f;
+$dark-sea-green : #85BAA1;
+$charcoal : #2C4459;
+$jet : #333146;
+
+$accent : $deep-carrot;
+$accent2 : $dollar-bill;
+$accent-dark: $jet;
+// page section
+$page-section-dark: lighten($accent-dark,10%);
+// $accent-dark: #242c42;
+$accent-less-dark : lighten($accent-dark, 30%);
+$accent-yellow: #EAA24B;
+//syllabus colors
+$textColorHeading : #49575f;
+$courseHeaderBg : #90a1ae;
+$tableHeaderBg : #e9f1f7;
+$tableHeaderText: #6f8190;
+$tableBg : #fafafa;
+$textGrey: #737373;

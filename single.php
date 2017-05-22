@@ -121,11 +121,6 @@
                                                 get_template_part( 'template-parts/post/content', 'none' );
                                             endif; ?>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 text-center">
-                                                <button class="btn btn-green" id="sticky" data-toggle="modal" data-target="#prihlaska"><span>Prihlasit</span></button>
-                                            </div>
-                                        </div>
                                     </div> <!-- end of sidebar 2 -->
                                 </div> <!-- end of row -->
                             </div>

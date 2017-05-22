@@ -1,0 +1,23 @@
+//Hugo radí
+@charset 'utf-8';
+
+//Bootstrap 
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+
+// moje
+@import "inezit/custom-variables.scss";
+@import "inezit/custom-color.scss";
+@import "inezit/custom-thumbnail.scss";
+@import "inezit/_custom-header-2.scss";
+@import "inezit/_custom-syllabus.scss";
+@import "inezit/_custom-price-widget.scss";
+@import "inezit/_custom-top-header.scss";
+@import "inezit/_custom-navbar.scss";
+@import "inezit/_custom-typography.scss";
+@import "inezit/_custom-buttons.scss";
+@import "inezit/_custom-breadCrumb.scss";
+@import "inezit/_custom-layout.scss";
+@import "inezit/custom-cards.scss";
+@import "inezit/custom-footer.scss";
+@import "inezit/custom-sidebar.scss";
+@import "inezit/custom-prihlaska.scss";

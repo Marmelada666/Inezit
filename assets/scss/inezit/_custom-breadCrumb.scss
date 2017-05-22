@@ -1,0 +1,31 @@
+.page-title .breadcrumb {
+    margin: 0;
+    background-color: transparent;
+    text-transform: capitalize
+}
+.page-title .breadcrumb li {
+    display: inline-block
+}
+
+.page-title .breadcrumb li a {
+    color: #cccccc
+}
+
+.page-title .breadcrumb li a:hover {
+    color: $accent
+}
+
+.page-title .breadcrumb li:last-child {
+    pointer-events: none
+}
+
+.page-title .breadcrumb li.active a {
+    color: #fff
+}
+
+.page-title .breadcrumb li + li:before {
+    padding: 0 10px;
+    color: #cccccc;
+    content: '\f105';
+    font-family: FontAwesome
+}

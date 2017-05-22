@@ -10,13 +10,20 @@ var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 //css nano
 var cssnano = require('gulp-cssnano');
+//postcss
+var autoprefixer = require('gulp-autoprefixer');
+
+
+var input = './assets/css/main.css';
+var output = './assets/css';
 
 
 // sass task
 gulp.task('sass', function() {
-	return gulp.src('bower_components/bootstrap-sass/assets/stylesheets/**/*.scss')
+	return gulp.src('assets/scss/**/*.scss')
 	.pipe(sass()) //Using gulp sass
-	.pipe(gulp.dest('assets/css'))
+	.pipe(autoprefixer())
+	.pipe(gulp.dest(output))
 	.pipe(browserSync.reload({
 		stream: true
 	}))
@@ -24,11 +31,10 @@ gulp.task('sass', function() {
 
 //watch task 
 gulp.task('watch',['browserSync', 'sass'], function(){
-	gulp.watch('bower_components/bootstrap-sass/assets/stylesheets/**/*.scss', ['sass']);
+	gulp.watch('assets/scss/**/*.scss', ['sass']);
 	// Other watchers
 	gulp.watch('./*.php', browserSync.reload);
 	gulp.watch('./template-parts/*.php', browserSync.reload);
-	gulp.watch('css/*.css', browserSync.reload);
 	gulp.watch('assets/css/**/*.css', browserSync.reload);
 });
 
@@ -49,8 +55,9 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./assets/js'))
 });
 gulp.task('css', function() {
-	return gulp.src('./assets/css/bootstrap.css')
+	return gulp.src('./assets/css/main.css')
 		.pipe(cssnano())
+		.pipe(autoprefixer())
 		.pipe(gulp.dest('./assets/css.min'))
 });
 
